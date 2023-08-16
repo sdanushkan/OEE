@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className={
-        location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/resendActivationLink' || location.pathname.startsWith('/resetPassword')?
+        location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/resendActivationLink' || location.pathname.startsWith('/resetPassword') || location.pathname === '/action'?
             navbar?
             'hidden h-fit w-full absolute z-50 bg-white md:bg-transparent rounded-[25px]':
             'hidden h-fit w-full absolute z-50 bg-white md:bg-transparent':
@@ -48,11 +48,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className={
-                    location.pathname === "/activate"?
-                    'w-full md:w-fit flex flex-col md:flex-row md:items-center md:gap-[50px] md:text-black':
-                    'w-full md:w-fit flex flex-col md:flex-row md:items-center md:gap-[50px] md:text-white'
-                }>
+                <div className='w-full md:w-fit flex flex-col md:flex-row md:items-center md:gap-[50px] md:text-black'>
                     <button className='h-[50px] md:h-fit w-full md:w-fit flex items-center border-b-[1px] md:border-0 border-opacity-5 border-black opacity-50 hover:opacity-75 duration-200 '>
                         <p className='md:text-sm opacity-50 md:opacity-100 capitalize md:uppercase'>about us</p>
                     </button>

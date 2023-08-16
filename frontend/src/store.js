@@ -3,6 +3,7 @@ import  thunk  from 'redux-thunk'
 import { configureStore } from '@reduxjs/toolkit'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { userActivationReducer, userLoginReducer, userPasswordResetConfirmationReducer, userPasswordResetReducer, userRegisterReducer, userResendActivationReducer } from './reducers/userReducers'
+import { requestCreateReducer } from './reducers/requestReducers'
 
 const reducer = combineReducers({
     userLogin : userLoginReducer,
@@ -11,6 +12,7 @@ const reducer = combineReducers({
     userResentActivation : userResendActivationReducer,
     userPasswordReset : userPasswordResetReducer,
     userPasswordResetConfirmation : userPasswordResetConfirmationReducer,
+    requestCreate: requestCreateReducer,
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo') ?

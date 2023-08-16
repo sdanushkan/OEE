@@ -8,6 +8,7 @@ import ActivateScreen from './screens/ActivateScreen'
 import ResendActivationEmail from './screens/ResendActivationEmail'
 import ResetPasswordScreen from './screens/ResetPasswordScreen'
 import ResetPasswordConfirmationScreen from './screens/ResetPasswordConfirmationScreen'
+import ActionScreen from './screens/ActionScreen'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/resendActivationLink' element={<ResendActivationEmail/>}/>
         <Route path='/resetPassword' element={<ResetPasswordScreen/>}/>
         <Route path='/resetPassword/:uid/:token' element={<ResetPasswordConfirmationScreen/>}/>
+        <Route path='/action' element={<ActionScreen/>}/>
       </Routes>
     </Router>
   )
