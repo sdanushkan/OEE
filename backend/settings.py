@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m%^3a)*le!=vbzv$25s_xmqw+#ku-i)7ymjvorep1u3n3)0l(o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["srk-production.up.railway.app"]
 
@@ -210,6 +210,3 @@ CSRF_TRUSTED_ORIGINS = [
     'https://srk-production.up.railway.app',
     'http://localhost'
 ]
-
-if os.getcwd() == '/app':
-    DEBUG = False
