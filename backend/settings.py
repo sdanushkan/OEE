@@ -30,7 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = ["srk-production.up.railway.app", "www.srk-elite.com", "srk.elite.com"]
 
 
-# Application definition
+# Application definitio
 
 INSTALLED_APPS = [
     'admin_interface',
