@@ -9,6 +9,8 @@ djangorestframework = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
 django-cors-headers = "*"
+django-admin-interface = "*"
+gunicorn = "*"
 
 [dev-packages]
 

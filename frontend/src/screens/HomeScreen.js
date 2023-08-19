@@ -6,12 +6,16 @@ import 'react-slideshow-image/dist/styles.css'
 import { GiChart } from 'react-icons/gi'
 import { FaShippingFast } from 'react-icons/fa'
 import { TbAppsFilled, TbWorldWww } from 'react-icons/tb'
-import { GrServices } from 'react-icons/gr'
+import { IoMdArrowBack, IoMdArrowForward } from 'react-icons/io'
 import { MdMiscellaneousServices, MdModeOfTravel, MdImportExport } from 'react-icons/md'
-import { BiLineChart } from 'react-icons/bi'
+import { BiLineChart, BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from 'react-icons/bi'
 import { SiYourtraveldottv } from 'react-icons/si'
 import { PiDevices } from 'react-icons/pi'
 import { IoIosApps } from 'react-icons/io'
+import hero from '../assets/Hero.png'
+import herom from '../assets/herom.png'
+import logo from '../assets/SRKlogo.png'
+
 
 const HomeScreen = () => {
     const { ref:heroText, inView:isHeroText } = useInView({triggerOnce:true});
@@ -30,24 +34,27 @@ const HomeScreen = () => {
         },
       ];
   return (
-    <div className='h-fit w-full pt-[100px] md:pt-[75px]'>
-        <section ref={heroText} className='h-fit w-full '>
-            <div className='h-fit w-full px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] pb-[25px] overflow-hidden border-b-[10px] border-black border-opacity-10'>
-                <div className='h-[500px] md:h-[500px] w-full max-w-[1024px] mx-auto flex flex-col md:flex-row md:items-center relative'>
+    <div className='h-screen w-full '>
+        <div className='h-full w-full flex flex-col items-center justify-center relative'>
+                <p className='text-6xl uppercase font-Orbitron tracking-widest font-semibold opacity-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>comming soon..!</p>
+                <img src={logo} className='h-[300px] w-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />
+        </div>
+        {/* <section ref={heroText} className='h-fit w-full '>
+            <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] pb-[25px] overflow-hidden border-b-[10px] border-black border-opacity-10'>
+                <div className='h-fit md:h-[500px] w-full max-w-[1024px] mx-auto flex flex-col md:flex-row md:items-center relative gap-[25px]'>
                     <div className={
                         isHeroText?
-                        'h-[300px] w-[85%] md:max-w-[500px] bg-blue-500 absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex flex-col items-start justify-center gap-[10px] px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] duration-500 mb-0':
-                        'h-[300px] w-[85%] md:max-w-[500px] bg-blue-500 absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex flex-col items-start justify-center gap-[10px] px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] duration-500 mt-[100px]'
+                        'h-fit md:h-[300px] w-full md:w-[85%] md:max-w-[300px] md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex py-[50px] md:py-0 flex-col items-start justify-center gap-[10px] duration-500 mb-0':
+                        'h-fit md:h-[300px] w-full md:w-[85%] md:max-w-[300px] md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex py-[50px] md:py-0 flex-col items-start justify-center gap-[10px] duration-500 mt-[100px]'
                     }>
-                        <p className='text-4xl font-bold text-white'>Consulting Services</p>
-                        <p className='text-white opacity-50'>A short, attention-grabbing headline that summarizes the benefits of your software solution</p>
+                        <p className='text-6xl font-bold text-black'>Consulting Services</p>
+                        <p className='text-black opacity-50'>A short, attention-grabbing headline that summarizes the benefits of your software solution</p>
+                        <button type='submit' placeholder='Password' className='h-[50px] w-full text-white px-[65px] bg-blue-500 duration-200 outline-none flex items-center justify-center gap-[10px] mt-[25px]'>
+                            <p>Action</p>
+                        </button>
                     </div>
-                    <div className='h-[400px] md:h-[500px] w-[85%] md:min-w-[500px] absolute md:top-1/2 right-[5px] md:right-0 bottom-0 md:bottom-auto md:transform md:-translate-y-1/2 z-0'>
-                        <img src='https://images.unsplash.com/photo-1519241047957-be31d7379a5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80' alt='' className={
-                            isHeroText?
-                            'h-full w-full object-cover duration-500 scale-100':
-                            'h-full w-full object-cover duration-500 scale-90'
-                        } />
+                    <div className='h-[500px] md:w-1/2 mt-auto md:ml-auto '>
+                        <img src={hero} className='h-full w-fit object-cover' />
                     </div>
                 </div>
             </div>
@@ -69,7 +76,7 @@ const HomeScreen = () => {
                             </div>
                             <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
                                 <p className='text-lg md:text-xl font-medium text-center md:text-left'>Trading Platform</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>A trading platform is a software system that allows investors.</p>
+                                <p className='text-sm text-center md:text-left opacity-50'>Our trading platform offers a variety of features to help you trade like a pro</p>
                             </div>
                         </div>
                         
@@ -81,7 +88,7 @@ const HomeScreen = () => {
                             </div>
                             <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
                                 <p className='text-lg md:text-xl font-medium text-center md:text-left'>Import and Export</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>A trading platform is a software system that allows investors.</p>
+                                <p className='text-sm text-center md:text-left opacity-50'>Our import and export platform is a one-stop shop for all your import and export needs.</p>
                             </div>
                         </div>
 
@@ -93,7 +100,7 @@ const HomeScreen = () => {
                             </div>
                             <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
                                 <p className='text-lg md:text-xl font-medium text-center md:text-left'>Software Solutions</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>A trading platform is a software system that allows investors.</p>
+                                <p className='text-sm text-center md:text-left opacity-50'>Our software solution platform provides a wide range of software solutions to businesses of all sizes.</p>
                             </div>
                         </div>
 
@@ -105,7 +112,7 @@ const HomeScreen = () => {
                             </div>
                             <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
                                 <p className='text-lg md:text-xl font-medium text-center md:text-left'>IT Services</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>A trading platform is a software system that allows investors.</p>
+                                <p className='text-sm text-center md:text-left opacity-50'>We offer services for a variety of needs, including cloud computing, cybersecurity, data center management, and IT consulting.</p>
                             </div>
                         </div>
 
@@ -117,7 +124,7 @@ const HomeScreen = () => {
                             </div>
                             <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
                                 <p className='text-lg md:text-xl font-medium text-center md:text-left'>Travels</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>A trading platform is a software system that allows investors.</p>
+                                <p className='text-sm text-center md:text-left opacity-50'>We offer a wide range of travel services, including flights, hotels, car rentals, tours, and activities.</p>
                             </div>
                         </div>
 
@@ -129,7 +136,7 @@ const HomeScreen = () => {
                             </div>
                             <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
                                 <p className='text-lg md:text-xl font-medium text-center md:text-left'>Web & Mobile app Solutions</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>A trading platform is a software system that allows investors.</p>
+                                <p className='text-sm text-center md:text-left opacity-50'>We provides businesses with everything they need to create, deploy, and manage their web and mobile applications.</p>
                             </div>
                         </div>
 
@@ -194,6 +201,96 @@ const HomeScreen = () => {
                 </div>
             </div>
         </section>
+        <section className='h-fit w-full border-b-[10px] border-black border-opacity-10'>
+            <div className='h-fit w-full max-w-[1024px] mx-auto md:flex justify-between gap-[50px] lg:gap-[100px]'>
+                <div className='overflow-hidden'>
+                    <div className='h-fit w-full flex justify-between'>
+                        <div className='h-fit w-full flex flex-col md:flex-row-reverse md:items-end items-center md:justify-end gap-[10px] md:gap-[0px] py-[50px]'>
+                            <p className='text-3xl capitalize font-bold text-center md:text-left'>Our customers are saying</p>
+                            <div className='h-[4px] w-[150px] md:w-[75px] bg-black opacity-25'></div>
+                        </div>
+                        <div className='hidden xl:flex items-center gap-[25px]'>
+                            <IoMdArrowBack className='text-2xl opacity-50 hover:opacity-100 duration-100'/>
+                            <IoMdArrowForward className='text-2xl opacity-50 hover:opacity-100 duration-100'/>
+                        </div>
+                    </div>
+                    <div className='h-fit w-full pb-[50px] flex overflow-scroll xl:overflow-hidden px-[25px] md:px-[50px] lg:px-[0px] xl:px-[0px] gap-[25px]'>
+                        <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500'>
+                            <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500 px-[25px] xl:px-[50px] py-[35px] xl:py-[65px] flex flex-col xl:flex-col-reverse justify-center gap-[15px] xl:gap-[5px]'>
+                                <div className='h-fit w-full flex items-center justify-between xl:justify-normal gap-[15px]'>
+                                    <div className='h-[50px] w-[50px] rounded-full bg-white'>
+
+                                    </div>
+                                    <div className='flex flex-col items-end xl:items-start'>
+                                        <p className='text-sm font-semibold capitalize text-white opacity-75'>rayappan</p>
+                                        <p className='text-sm capitalize text-white opacity-50'>Project Manager</p>
+                                    </div>
+                                </div>
+                                <div className='w-full flex flex-col'>
+                                    <BiSolidQuoteAltLeft className='xl:text-2xl text-white mb-[10px]'/>
+                                        <p className='font-semibold text-white text-center xl:text-xl'>The results given are very satisfying</p>
+                                    <BiSolidQuoteAltRight className='xl:text-2xl text-white ml-auto'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500'>
+                            <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500 px-[25px] xl:px-[50px] py-[35px] xl:py-[65px] flex flex-col xl:flex-col-reverse justify-center gap-[15px] xl:gap-[5px]'>
+                                <div className='h-fit w-full flex items-center justify-between xl:justify-normal gap-[15px]'>
+                                    <div className='h-[50px] w-[50px] rounded-full bg-white'>
+
+                                    </div>
+                                    <div className='flex flex-col items-end xl:items-start'>
+                                        <p className='text-sm font-semibold capitalize text-white opacity-75'>rayappan</p>
+                                        <p className='text-sm capitalize text-white opacity-50'>Project Manager</p>
+                                    </div>
+                                </div>
+                                <div className='w-full flex flex-col'>
+                                    <BiSolidQuoteAltLeft className='xl:text-2xl text-white mb-[10px]'/>
+                                        <p className='font-semibold text-white text-center xl:text-xl'>The results given are very satisfying</p>
+                                    <BiSolidQuoteAltRight className='xl:text-2xl text-white ml-auto'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500'>
+                            <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500 px-[25px] xl:px-[50px] py-[35px] xl:py-[65px] flex flex-col xl:flex-col-reverse justify-center gap-[15px] xl:gap-[5px]'>
+                                <div className='h-fit w-full flex items-center justify-between xl:justify-normal gap-[15px]'>
+                                    <div className='h-[50px] w-[50px] rounded-full bg-white'>
+
+                                    </div>
+                                    <div className='flex flex-col items-end xl:items-start'>
+                                        <p className='text-sm font-semibold capitalize text-white opacity-75'>rayappan</p>
+                                        <p className='text-sm capitalize text-white opacity-50'>Project Manager</p>
+                                    </div>
+                                </div>
+                                <div className='w-full flex flex-col'>
+                                    <BiSolidQuoteAltLeft className='xl:text-2xl text-white mb-[10px]'/>
+                                        <p className='font-semibold text-white text-center xl:text-xl'>The results given are very satisfying</p>
+                                    <BiSolidQuoteAltRight className='xl:text-2xl text-white ml-auto'/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500'>
+                            <div className='h-fit w-[85vw] max-w-[300px] md:max-w-[350px] xl:max-w-[450px] bg-blue-500 px-[25px] xl:px-[50px] py-[35px] xl:py-[65px] flex flex-col xl:flex-col-reverse justify-center gap-[15px] xl:gap-[5px]'>
+                                <div className='h-fit w-full flex items-center justify-between xl:justify-normal gap-[15px]'>
+                                    <div className='h-[50px] w-[50px] rounded-full bg-white'>
+
+                                    </div>
+                                    <div className='flex flex-col items-end xl:items-start'>
+                                        <p className='text-sm font-semibold capitalize text-white opacity-75'>rayappan</p>
+                                        <p className='text-sm capitalize text-white opacity-50'>Project Manager</p>
+                                    </div>
+                                </div>
+                                <div className='w-full flex flex-col'>
+                                    <BiSolidQuoteAltLeft className='xl:text-2xl text-white mb-[10px]'/>
+                                        <p className='font-semibold text-white text-center xl:text-xl'>The results given are very satisfying</p>
+                                    <BiSolidQuoteAltRight className='xl:text-2xl text-white ml-auto'/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> */}
     </div>
   )
 }

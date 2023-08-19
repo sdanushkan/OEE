@@ -13,16 +13,16 @@ import ActionScreen from './screens/ActionScreen'
 const App = () => {
   return (
     <Router className=''>
-      <Header/>
+      {/* <Header/> */}
       <Routes>
         <Route path='/' element={<HomeScreen/>}/>
-        <Route path='/login' element={<LoginScreen/>}/>
+        {/* <Route path='/login' element={<LoginScreen/>}/>
         <Route path='/register' element={<RegisterScreen/>}/>
         <Route path='/activate/:uid/:token' element={<ActivateScreen/>}/>
         <Route path='/resendActivationLink' element={<ResendActivationEmail/>}/>
         <Route path='/resetPassword' element={<ResetPasswordScreen/>}/>
         <Route path='/resetPassword/:uid/:token' element={<ResetPasswordConfirmationScreen/>}/>
-        <Route path='/action' element={<ActionScreen/>}/>
+        <Route path='/action' element={<ActionScreen/>}/> */}
       </Routes>
     </Router>
   )
