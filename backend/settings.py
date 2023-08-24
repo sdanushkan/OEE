@@ -211,5 +211,6 @@ CSRF_TRUSTED_ORIGINS = [
     'https://srk-elite.com',
     'https://www.srk-elite.com',
     'http://localhost',
+    "https://web-production-233ed.up.railway.app/"
 ]
 
