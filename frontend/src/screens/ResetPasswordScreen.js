@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { resetPassword } from '../actions/userActions'
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import logo from '../assets/SRKlogo.png'
 
 const ResetPasswordScreen = () => {
     const userPasswordReset = useSelector(state => state.userPasswordReset)
@@ -36,19 +37,32 @@ const ResetPasswordScreen = () => {
     }
 
   return (
-    <div className='h-fit w-full'>
+    <div className='h-fit w-full relative'>
+        <div className='absolute h-[300px] w-full bg-gray-50 hidden md:flex md:items-center'>
+            <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] overflow-hidden'>
+                <div className='h-fit w-full max-w-[1024px] mx-auto '>
+                    <div className='w-[300px] lg:w-[400px] '>
+                        <p className='text-5xl font-semibold text-blue-500'>Recover your account,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] overflow-hidden'>
             <div ref={formBox} className='h-screen min-h-fit max-w-[1024px] mx-auto py-[25px] relative flex md:items-center'>
                 <form onSubmit={submitHandler} className={
                     isFormBox?
-                    'h-fit w-full md:w-[300px] lg:w-[400px] flex flex-col gap-[15px] duration-500 mb-0 opacity-100':
-                    'h-fit w-full md:w-[300px] lg:w-[400px] flex flex-col gap-[15px] duration-500 -mb-[100px] opacity-0'
+                    'h-fit w-full md:w-[450px] lg:w-[500px] flex ml-auto flex-col gap-[15px] md:py-[75px] md:px-[50px] bg-white md:shadow-[0px_5px_25px_0px_rgba(0,0,0,0.05)] duration-500 mb-0 opacity-100':
+                    'h-fit w-full md:w-[450px] lg:w-[500px] flex ml-auto flex-col gap-[15px] md:py-[75px] md:px-[50px] bg-white md:shadow-[0px_5px_25px_0px_rgba(0,0,0,0.05)] duration-500 -mb-[100px] opacity-0'
                 }>
-                    <Link to={'/'} className='h-[50px] w-full flex items-center'>
-                        <p className='text-2xl font-Orbitron font-medium text-blue-500'>SRK</p>
+                    <Link to={'/'} className='h-[50px] w-full flex items-center gap-[10px]'>
+                        <img src={logo} alt='' className='h-[50px] w-[50px] ' />
+                        <div className='text-black'>
+                            <p className='font-Orbitron font-semibold tracking-wider uppercase opacity-50'>elite</p>
+                            <p className='font-Orbitron font-semibold tracking-wider uppercase opacity-50'>enterprises</p>
+                        </div>
                     </Link>                   
                    
-                    <div className='h-fit w-full flex flex-col gap-[10px]'>
+                    <div className='h-fit w-full flex flex-col gap-[10px] pt-[25px]'>
                         {
                             error?
                             <p className='text-red-500 text-xs'>{error}</p>:
@@ -57,7 +71,7 @@ const ResetPasswordScreen = () => {
                             ''
                         }
                         <div className='h-[50px] w-full relative'>
-                            <input type='email' autoComplete={false} autoSave={false} required={true} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-10 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <input type='email' autoComplete={false} autoSave={false} required={true} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
                             <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
                                 <IoMailOutline className='text-2xl'/>
                             </div>

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d0232f6.css",
-    "main.js": "/static/js/main.71b07591.js",
+    "main.css": "/static/css/main.d7e5c860.css",
+    "main.js": "/static/js/main.76a5643b.js",
     "static/media/herom.png": "/static/media/herom.3ee20b03cb5c8ffde2df.png",
     "static/media/Hero.png": "/static/media/Hero.24bc3152d73909540b2b.png",
     "static/media/SRKlogo.png": "/static/media/SRKlogo.14c0d4db72514a34dadc.png",
     "index.html": "/index.html",
-    "main.9d0232f6.css.map": "/static/css/main.9d0232f6.css.map",
-    "main.71b07591.js.map": "/static/js/main.71b07591.js.map"
+    "main.d7e5c860.css.map": "/static/css/main.d7e5c860.css.map",
+    "main.76a5643b.js.map": "/static/js/main.76a5643b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d0232f6.css",
-    "static/js/main.71b07591.js"
+    "static/css/main.d7e5c860.css",
+    "static/js/main.76a5643b.js"
   ]
 }

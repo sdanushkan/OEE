@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-m%^3a)*le!=vbzv$25s_xmqw+#ku-i)7ymjvorep1u3n3)0l(o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["srk-production.up.railway.app", "www.srk-elite.com", "srk.elite.com"]
+ALLOWED_HOSTS = ["srk-production.up.railway.app", "www.srk-elite.com", "srk.elite.com", "localhost"]
 
 
 # Application definitio
@@ -94,8 +94,8 @@ DJOSER = {
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'difineproinfo@gmail.com'
-EMAIL_HOST_PASSWORD = 'cpswdsqharjohefh'
+EMAIL_HOST_USER = 'srkeliteenterprises@gmail.com'
+EMAIL_HOST_PASSWORD = 'luotdwdycppqoczg'
 EMAIL_USE_TLS = True
 
 

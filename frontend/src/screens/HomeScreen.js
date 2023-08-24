@@ -15,6 +15,8 @@ import { IoIosApps } from 'react-icons/io'
 import hero from '../assets/Hero.png'
 import herom from '../assets/herom.png'
 import logo from '../assets/SRKlogo.png'
+import { Link } from 'react-router-dom';
+import pImg from '../assets/ProssessImg.jpg'
 
 
 const HomeScreen = () => {
@@ -34,27 +36,23 @@ const HomeScreen = () => {
         },
       ];
   return (
-    <div className='h-screen w-full '>
-        <div className='h-full w-full flex flex-col items-center justify-center relative'>
-                <p className='text-6xl uppercase font-Orbitron tracking-widest font-semibold opacity-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>comming soon..!</p>
-                <img src={logo} className='h-[300px] w-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />
-        </div>
-        {/* <section ref={heroText} className='h-fit w-full '>
+    <div className='h-fit w-full pt-[100px] md:pt-[75px]'>
+        <section ref={heroText} className='h-fit w-full '>
             <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] pb-[25px] overflow-hidden border-b-[10px] border-black border-opacity-10'>
                 <div className='h-fit md:h-[500px] w-full max-w-[1024px] mx-auto flex flex-col md:flex-row md:items-center relative gap-[25px]'>
                     <div className={
                         isHeroText?
-                        'h-fit md:h-[300px] w-full md:w-[85%] md:max-w-[300px] md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex py-[50px] md:py-0 flex-col items-start justify-center gap-[10px] duration-500 mb-0':
-                        'h-fit md:h-[300px] w-full md:w-[85%] md:max-w-[300px] md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex py-[50px] md:py-0 flex-col items-start justify-center gap-[10px] duration-500 mt-[100px]'
+                        'h-fit md:h-[300px] w-full md:w-[85%] md:max-w-[450px] md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex py-[50px] md:py-0 flex-col items-start justify-center gap-[10px] duration-500 mb-0':
+                        'h-fit md:h-[300px] w-full md:w-[85%] md:max-w-[450px] md:absolute md:top-1/2 md:left-0 md:transform md:-translate-y-1/2 z-10 flex py-[50px] md:py-0 flex-col items-start justify-center gap-[10px] duration-500 mt-[100px]'
                     }>
                         <p className='text-6xl font-bold text-black'>Consulting Services</p>
-                        <p className='text-black opacity-50'>A short, attention-grabbing headline that summarizes the benefits of your software solution</p>
-                        <button type='submit' placeholder='Password' className='h-[50px] w-full text-white px-[65px] bg-blue-500 duration-200 outline-none flex items-center justify-center gap-[10px] mt-[25px]'>
-                            <p>Action</p>
-                        </button>
+                        <p className='md:text-sm text-black opacity-50'>Our consulting services platform connects businesses with experienced consultants who can help them achieve their goals.</p>
+                        <Link to={'/action'} className='h-[50px] w-[200px] text-white px-[25px] bg-blue-500 duration-200 outline-none flex items-center justify-center gap-[10px] mt-[25px] rounded-[5px]'>
+                            <p>Contect us</p>
+                        </Link>
                     </div>
-                    <div className='h-[500px] md:w-1/2 mt-auto md:ml-auto '>
-                        <img src={hero} className='h-full w-fit object-cover' />
+                    <div className='h-[300px] md:h-[500px] md:w-1/2 mt-auto md:ml-auto '>
+                        <img src={hero} className='h-full w-fit object-contain md:object-cover' />
                     </div>
                 </div>
             </div>
@@ -66,79 +64,91 @@ const HomeScreen = () => {
                         <p className='text-3xl capitalize font-bold text-center md:text-left'>Our services</p>
                         <div className='h-[4px] w-[150px] md:w-[75px] bg-black opacity-25'></div>
                     </div>
-                    <div className='h-fit w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-[25px] lg:gap-[50px] py-[0px] md:py-[50px]'>
+                    <div className='h-fit w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-[25px] lg:gap-[50px] py-[15px] md:py-[50px]'>
 
-                        <div className='h-fit w-full flex flex-col md:flex-row gap-[15px] md:gap-[25px] items-center md:items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                        <div className='h-fit w-full flex flex-row gap-[10px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
                             <div className='h-[50px] w-[50px] rounded-full'>
                                 <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
                                     <GiChart className='text-2xl text-white'/>
                                 </div>
                             </div>
-                            <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
-                                <p className='text-lg md:text-xl font-medium text-center md:text-left'>Trading Platform</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>Our trading platform offers a variety of features to help you trade like a pro</p>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>Trading Platform</p>
+                                <p className='text-sm text-left opacity-50'>Our trading platform offers a variety of features to help you trade like a pro</p>
                             </div>
                         </div>
                         
-                        <div className='h-fit w-full flex flex-col md:flex-row gap-[15px] md:gap-[25px] items-center md:items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                        <div className='h-fit w-full flex flex-row gap-[10px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
                             <div className='h-[50px] w-[50px] rounded-full'>
                                 <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
                                     <MdImportExport className='text-2xl text-white'/>
                                 </div>
                             </div>
-                            <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
-                                <p className='text-lg md:text-xl font-medium text-center md:text-left'>Import and Export</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>Our import and export platform is a one-stop shop for all your import and export needs.</p>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>Import and Export</p>
+                                <p className='text-sm text-left opacity-50'>Our import and export platform is a one-stop shop for all your import and export needs.</p>
                             </div>
                         </div>
 
-                        <div className='h-fit w-full flex flex-col md:flex-row gap-[15px] md:gap-[25px] items-center md:items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                        <div className='h-fit w-full flex flex-row gap-[10px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
                             <div className='h-[50px] w-[50px] rounded-full'>
                                 <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
                                     <IoIosApps className='text-2xl text-white'/>
                                 </div>
                             </div>
-                            <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
-                                <p className='text-lg md:text-xl font-medium text-center md:text-left'>Software Solutions</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>Our software solution platform provides a wide range of software solutions to businesses of all sizes.</p>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>Software Solutions</p>
+                                <p className='text-sm text-left opacity-50'>Our software solution platform provides a wide range of software solutions to businesses of all sizes.</p>
                             </div>
                         </div>
 
-                        <div className='h-fit w-full flex flex-col md:flex-row gap-[15px] md:gap-[25px] items-center md:items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                        <div className='h-fit w-full flex flex-row gap-[10px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
                             <div className='h-[50px] w-[50px] rounded-full'>
                                 <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
                                     <MdMiscellaneousServices className='text-2xl text-white' />
                                 </div>
                             </div>
-                            <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
-                                <p className='text-lg md:text-xl font-medium text-center md:text-left'>IT Services</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>We offer services for a variety of needs, including cloud computing, cybersecurity, data center management, and IT consulting.</p>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>IT Services</p>
+                                <p className='text-sm text-left opacity-50'>We offer services for a variety of needs, including cloud computing, cybersecurity, data center management, and IT consulting.</p>
                             </div>
                         </div>
 
-                        <div className='h-fit w-full flex flex-col md:flex-row gap-[15px] md:gap-[25px] items-center md:items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                        <div className='h-fit w-full flex flex-row gap-[10px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
                             <div className='h-[50px] w-[50px] rounded-full'>
                                 <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
                                     <SiYourtraveldottv className='text-2xl text-white'/>
                                 </div>
                             </div>
-                            <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
-                                <p className='text-lg md:text-xl font-medium text-center md:text-left'>Travels</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>We offer a wide range of travel services, including flights, hotels, car rentals, tours, and activities.</p>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>Travels</p>
+                                <p className='text-sm text-left opacity-50'>We offer a wide range of travel services, including flights, hotels, car rentals, tours, and activities.</p>
                             </div>
                         </div>
 
-                        <div className='h-fit w-full flex flex-col md:flex-row gap-[15px] md:gap-[25px] items-center md:items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                        <div className='h-fit w-full flex flex-row gap-[10px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
+                            <div className='h-[50px] w-[50px] rounded-full'>
+                                <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
+                                    <SiYourtraveldottv className='text-2xl text-white'/>
+                                </div>
+                            </div>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>Consulting Services</p>
+                                <p className='text-sm text-left opacity-50'>Our consulting services platform connects businesses with experienced consultants who can help them achieve their goals.</p>
+                            </div>
+                        </div>
+
+                        {/* <div className='h-fit w-full f md:flex-row gap-[15px] md:gap-[25px] items-start py-[25px] border-b-[1px] md:border-0 border-black border-opacity-10'>
                             <div className='h-[50px] w-[50px] rounded-full'>
                                 <div className='h-[50px] w-[50px] rounded-full flex items-center justify-center bg-blue-500'>
                                     <PiDevices className='text-2xl text-white'/>
                                 </div>
                             </div>
-                            <div className='h-fit w-full flex flex-col md:gap-[15px] px-[25px] md:px-0'>
-                                <p className='text-lg md:text-xl font-medium text-center md:text-left'>Web & Mobile app Solutions</p>
-                                <p className='text-sm text-center md:text-left opacity-50'>We provides businesses with everything they need to create, deploy, and manage their web and mobile applications.</p>
+                            <div className='h-fit w-full flex flex-col gap-[5px] md:gap-[15px] px-[25px] md:px-0'>
+                                <p className='text-xl font-semibold text-left'>Web & Mobile app Solutions</p>
+                                <p className='text-sm text-left opacity-50'>We provides businesses with everything they need to create, deploy, and manage their web and mobile applications.</p>
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
@@ -151,8 +161,8 @@ const HomeScreen = () => {
                         <p className='text-3xl capitalize font-bold text-center md:text-left'>we provide the best process experience</p>
                         <div className='h-[4px] w-[150px] md:w-[75px] bg-black opacity-25'></div>
                     </div>
-                    <div className='h-fit w-full pt-[50px] flex flex-col'>
-                        <div className='h-auto flex items-start gap-[15px]'>
+                    <div className='h-fit w-full pt-[50px] flex flex-col gap-[10px]'>
+                        <div className='h-auto flex items-start gap-[30px]'>
                             <div className='h-auto w-[50px] flex flex-col items-center'>
                                 <div className='h-[50px] w-[50px] bg-blue-500 rounded-full flex items-center justify-center text-white'>
                                     01                            
@@ -166,7 +176,7 @@ const HomeScreen = () => {
                                 <p className='text-sm opacity-50'>First thing you determine the concept and model you want</p>
                             </div>
                         </div>
-                        <div className='h-auto flex items-start gap-[15px]'>
+                        <div className='h-auto flex items-start gap-[30px]'>
                             <div className='h-auto w-[50px] flex flex-col items-center'>
                                 <div className='h-[50px] w-[50px] bg-blue-500 rounded-full flex items-center justify-center text-white'>
                                     02                         
@@ -180,7 +190,7 @@ const HomeScreen = () => {
                                 <p className='text-sm opacity-50'>When the briefing process is complete and what the client wants has been achieved. Then we carry out the execution of the desired concept</p>
                             </div>
                         </div>
-                        <div className='h-auto flex items-start gap-[15px]'>
+                        <div className='h-auto flex items-start gap-[30px]'>
                             <div className='h-auto w-[50px] flex flex-col items-center'>
                                 <div className='h-[50px] w-[50px] bg-blue-500 rounded-full flex items-center justify-center text-white'>
                                     03                            
@@ -197,11 +207,11 @@ const HomeScreen = () => {
                     </div>
                 </div>
                 <div className='h-[500px] w-[400px] hidden md:flex bg-black'>
-
+                    <img src={pImg} alt='' className='h-full w-full object-cover' />
                 </div>
             </div>
         </section>
-        <section className='h-fit w-full border-b-[10px] border-black border-opacity-10'>
+        {/* <section className='h-fit w-full border-b-[10px] border-black border-opacity-10'>
             <div className='h-fit w-full max-w-[1024px] mx-auto md:flex justify-between gap-[50px] lg:gap-[100px]'>
                 <div className='overflow-hidden'>
                     <div className='h-fit w-full flex justify-between'>

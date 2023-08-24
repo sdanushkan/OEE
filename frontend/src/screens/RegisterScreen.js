@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { register } from '../actions/userActions'
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
+import logo from '../assets/SRKlogo.png'
 
 const RegisterScreen = () => {
     const userRegister = useSelector(state => state.userRegister)
@@ -34,18 +35,31 @@ const RegisterScreen = () => {
     }
 
   return (
-    <div className='h-fit w-full'>
+    <div className='h-fit w-full relative'>
+        <div className='absolute h-[300px] w-full bg-gray-50 hidden md:flex md:items-center'>
+            <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] overflow-hidden'>
+                <div className='h-fit w-full max-w-[1024px] mx-auto '>
+                    <div className='w-[300px] lg:w-[400px] '>
+                        <p className='text-5xl font-semibold text-blue-500'>Create your account,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] overflow-hidden'>
-            <div ref={formBox} className='h-screen min-h-fit max-w-[1024px] mx-auto py-[25px] relative flex md:items-center'>
+            <div ref={formBox} className='h-screen md:h-fit min-h-fit max-w-[1024px] mx-auto py-[25px] md:py-[150px] relative flex md:items-center'>
                 <form onSubmit={submitHandler} className={
                     isFormBox?
-                    'h-fit w-full md:w-[300px] lg:w-[400px] flex flex-col gap-[15px] duration-500 mb-0 opacity-100':
-                    'h-fit w-full md:w-[300px] lg:w-[400px] flex flex-col gap-[15px] duration-500 -mb-[100px] opacity-0'
+                    'h-fit w-full md:w-[450px] lg:w-[500px] flex ml-auto flex-col gap-[15px] md:py-[75px] md:px-[50px] bg-white md:shadow-[0px_5px_25px_0px_rgba(0,0,0,0.05)] duration-500 mb-0 opacity-100':
+                    'h-fit w-full md:w-[450px] lg:w-[500px] flex ml-auto flex-col gap-[15px] md:py-[75px] md:px-[50px] bg-white md:shadow-[0px_5px_25px_0px_rgba(0,0,0,0.05)] duration-500 -mb-[100px] opacity-0'
                 }>
-                    <Link to={'/'} className='h-[50px] w-full flex items-center'>
-                        <p className='text-2xl font-Orbitron font-medium text-blue-500'>SRK</p>
-                    </Link>                   
-                    <div className='h-[50px] w-full flex gap-[25px]'>
+                    <Link to={'/'} className='h-[50px] w-full flex items-center gap-[10px]'>
+                        <img src={logo} alt='' className='h-[50px] w-[50px] ' />
+                        <div className='text-black'>
+                            <p className='font-Orbitron font-semibold tracking-wider uppercase opacity-50'>elite</p>
+                            <p className='font-Orbitron font-semibold tracking-wider uppercase opacity-50'>enterprises</p>
+                        </div>
+                    </Link>                 
+                    {/* <div className='h-[50px] w-full flex gap-[25px]'>
                         <div className='h-[50px] w-full border-[1px] border-black border-opacity-10 rounded-[5px] flex items-center justify-center gap-[5px]'>
                             <FcGoogle className='text-2xl'/>
                             <p className='font-medium opacity-75' >Google</p>
@@ -61,8 +75,8 @@ const RegisterScreen = () => {
                         </div>
                         <div className='h-[1px] w-full bg-black opacity-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0'>
                         </div>
-                    </div>
-                    <div className='h-fit w-full flex flex-col gap-[10px]'>
+                    </div> */}
+                    <div className='h-fit w-full flex flex-col gap-[10px] pt-[25px]'>
                         <div className='flex flex-wrap gap-[5px]'>
                             {
                                 error?
@@ -103,12 +117,12 @@ const RegisterScreen = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='h-[50px] w-full flex items-center justify-between'>
+                    {/* <div className='h-[50px] w-full flex items-center justify-between'>
                         <div className='h-[24px] w-[24px] bg-blue-500 rounded-[5px]'>
 
                         </div>
-                    </div>
-                    <div className='h-[50px] w-full'>
+                    </div> */}
+                    <div className='h-[50px] w-full mt-[15px]'>
                         <button type='submit' disabled={
                             loading?
                             true:
@@ -119,16 +133,13 @@ const RegisterScreen = () => {
                                 <AiOutlineLoading3Quarters className='animate-spin'/>:
                                 ''
                             }
-                            <p>Register</p>
+                            <p className='uppercase font-semibold'>Create account</p>
                         </button>
                     </div> 
-                    <div className='h-fit w-full md:flex items-center justify-center gap-[5px] hidden'>
-                        <p className='text-sm'>I already have an Account!</p><Link to={'/login'} className='text-sm text-blue-500'>Sing in</Link>
+                    <div className='h-fit w-full flex items-center gap-[5px] font-semibold'>
+                        <p className='text-sm opacity-25'>I already have an Account!</p><Link to={'/login'} className='text-sm text-blue-500'>Sing in</Link>
                     </div>       
                 </form>
-                <div className='h-fit w-full absolute bottom-[75px] flex items-center justify-center gap-[5px] md:hidden'>
-                    <p className='text-sm'>I don't have an Account!</p><Link to={'/login'} className='text-sm text-blue-500'>Sing in</Link>
-                </div>
             </div>
         </div>
     </div>

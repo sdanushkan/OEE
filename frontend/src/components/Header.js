@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 // import { useInView } from 'react-intersection-observer'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../actions/userActions'
+import logo from '../assets/SRKlogo.png'
 
 const Header = () => {
     const userLogin = useSelector(state => state.userLogin)
@@ -40,28 +41,32 @@ const Header = () => {
             }>
                 <div className='h-[65px] w-full md:w-fit flex items-center justify-between '>
                     <div className='h-[65px] w-full flex items-center justify-between'>
-                        <div className=''>
-                            <p className='font-Orbitron font-medium text-blue-500'>SRK</p>
-                        </div>
+                        <Link to={'/'} className='h-[50px] w-full flex items-center gap-[10px]'>
+                            <img src={logo} alt='' className='h-[50px] w-[50px] ' />
+                            <div className='text-black'>
+                                <p className='font-Orbitron font-medium tracking-wider text-blue-500 uppercase'>elite</p>
+                                <p className='font-Orbitron font-medium tracking-wider text-blue-500 uppercase'>enterprises</p>
+                            </div>
+                        </Link> 
                         <div onClick={navbarHandler} className='md:hidden'>
                             <HiOutlineMenu className='text-xl'/>
                         </div>
                     </div>
                 </div>
                 <div className='w-full md:w-fit flex flex-col md:flex-row md:items-center md:gap-[50px] md:text-black'>
-                    <button className='h-[50px] md:h-fit w-full md:w-fit flex items-center border-b-[1px] md:border-0 border-opacity-5 border-black opacity-50 hover:opacity-75 duration-200 '>
+                    {/* <button className='h-[50px] md:h-fit w-full md:w-fit flex items-center border-b-[1px] md:border-0 border-opacity-5 border-black opacity-50 hover:opacity-75 duration-200 '>
                         <p className='md:text-sm opacity-50 md:opacity-100 capitalize md:uppercase'>about us</p>
                     </button>
                     <button className='h-[50px] md:h-fit w-full md:w-fit flex items-center border-b-[1px] md:border-0 border-opacity-5 border-black opacity-50 hover:opacity-75 duration-200 '>
                         <p className='md:text-sm opacity-50 md:opacity-100 capitalize md:uppercase'>contact us</p>
-                    </button>
+                    </button> */}
                     {
                         userInfo?
                         <button onClick={logoutHandler} className='h-[50px] md:h-fit w-full md:w-fit flex items-center border-b-[1px] md:border-0 border-opacity-5 border-black opacity-50 hover:opacity-75 duration-200 '>
-                            <p className='md:text-sm opacity-50 md:opacity-100 capitalize md:uppercase'>logout</p>
+                            <p className='font-medium opacity-25 md:opacity-100 capitalize'>logout</p>
                         </button>:
                         <Link to={'/login'} className='h-[50px] md:h-fit w-full md:w-fit flex items-center border-b-[1px] md:border-0 border-opacity-5 border-black opacity-50 hover:opacity-75 duration-200 '>
-                        <p className='md:text-sm opacity-50 md:opacity-100 capitalize md:uppercase'>login</p>
+                        <p className='font-medium opacity-25 md:opacity-100 capitalize'>login</p>
                         </Link>
                     }
                 </div>

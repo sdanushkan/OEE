@@ -9,21 +9,26 @@ import ResendActivationEmail from './screens/ResendActivationEmail'
 import ResetPasswordScreen from './screens/ResetPasswordScreen'
 import ResetPasswordConfirmationScreen from './screens/ResetPasswordConfirmationScreen'
 import ActionScreen from './screens/ActionScreen'
+import Footer from './components/Footer'
+import PrivateRoute from './utilities/privateRoute'
 
 const App = () => {
   return (
     <Router className=''>
-      {/* <Header/> */}
+      <Header/>
       <Routes>
         <Route path='/' element={<HomeScreen/>}/>
-        {/* <Route path='/login' element={<LoginScreen/>}/>
+        <Route path='/login' element={<LoginScreen/>}/>
         <Route path='/register' element={<RegisterScreen/>}/>
         <Route path='/activate/:uid/:token' element={<ActivateScreen/>}/>
         <Route path='/resendActivationLink' element={<ResendActivationEmail/>}/>
         <Route path='/resetPassword' element={<ResetPasswordScreen/>}/>
         <Route path='/resetPassword/:uid/:token' element={<ResetPasswordConfirmationScreen/>}/>
-        <Route path='/action' element={<ActionScreen/>}/> */}
+        <Route element={<PrivateRoute/>}>
+          <Route path='/action' element={<ActionScreen/>}/>
+        </Route>
       </Routes>
+      <Footer/>
     </Router>
   )
 }
