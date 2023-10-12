@@ -28,7 +28,7 @@ const App = () => {
           <Route path='/action' element={<ActionScreen/>}/>
         </Route>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </Router>
   )
 }
