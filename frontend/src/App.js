@@ -11,13 +11,24 @@ import ResetPasswordConfirmationScreen from './screens/ResetPasswordConfirmation
 import ActionScreen from './screens/ActionScreen'
 import Footer from './components/Footer'
 import PrivateRoute from './utilities/privateRoute'
+import Canada from './screens/countries/Canada';
+import Australia from './screens/countries/Australia';
+import Unitedstates from './screens/countries/Unitedstates';
+import Switzerland from './screens/countries/Switzerland';
+import Europe from './screens/countries/Europe';
 
 const App = () => {
   return (
     <Router className=''>
       <Header/>
       <Routes>
-        <Route path='/' element={<HomeScreen/>}/>
+        <Route path='/' element={<HomeScreen/>} />
+        <Route path='/canada' element={<Canada/>} />
+        <Route path='/australia' element={<Australia/>} />
+        <Route path='/unitedstates' element={<Unitedstates/>} />
+        <Route path='/switzerland' element={<Switzerland/>} />
+        <Route path='/Europe' element={<Europe/>} />
+
         <Route path='/login' element={<LoginScreen/>}/>
         <Route path='/register' element={<RegisterScreen/>}/>
         <Route path='/activate/:uid/:token' element={<ActivateScreen/>}/>

@@ -92,14 +92,7 @@ const LoginScreen = () => {
                     isFormBox?
                     'h-fit w-full md:w-[450px] lg:w-[500px] flex ml-auto flex-col gap-[15px] md:py-[75px] md:px-[50px] bg-white md:shadow-[0px_5px_25px_0px_rgba(0,0,0,0.05)] duration-500 mb-0 opacity-100':
                     'h-fit w-full md:w-[450px] lg:w-[500px] flex ml-auto flex-col gap-[15px] md:py-[75px] md:px-[50px] bg-white md:shadow-[0px_5px_25px_0px_rgba(0,0,0,0.05)] duration-500 -mb-[100px] opacity-0'
-                }>
-                    <Link to={'/'} className='h-[50px] w-full flex items-center gap-[10px]'>
-                        <img src={logo} alt='' className='h-[50px] w-[50px] ' />
-                        <div className='text-black'>
-                            <p className='font-Orbitron font-semibold tracking-wider uppercase opacity-50'>elite</p>
-                            <p className='font-Orbitron font-semibold tracking-wider uppercase opacity-50'>enterprises</p>
-                        </div>
-                    </Link>                  
+                }>                
                     {/* <div className='h-[50px] w-full flex gap-[25px]'>
                         <div className='h-[50px] w-full border-[1px] border-black border-opacity-10 rounded-[5px] flex items-center justify-center gap-[5px]'>
                             <FcGoogle className='text-2xl'/>

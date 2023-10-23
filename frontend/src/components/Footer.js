@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/SRKlogo.png'
+import logo1 from '../assets/logo1.png'
 import { Link, useLocation } from 'react-router-dom'
 
 const Footer = () => {
@@ -53,10 +53,10 @@ const Footer = () => {
             </div>
             <div className='h-fit md:w-1/2 pt-[50px] flex flex-col gap-[25px]'>
                 <Link to={'/'} className='h-[50px] w-full flex items-center gap-[15px]'>
-                    <img src={logo} alt='' className='h-[50px] w-[50px] ' />
+                    <img src={logo1} alt='' className='h-[50px] w-[50px] ' />
                     <div className='text-black'>
-                        <p className='font-Orbitron font-medium text-2xl tracking-widest text-black uppercase'>SRK</p>
-                        <p className='font-Orbitron font-medium text-sm tracking-widest text-black uppercase opacity-25'>elite enterprises</p>
+                        <p className='font-Orbitron font-medium text-2xl tracking-widest text-black uppercase'>oec</p>
+                        <p className='font-Orbitron font-medium text-sm tracking-widest text-black uppercase opacity-25'></p>
                     </div>
                 </Link> 
                 <p className='text- font-bold lowercase text-black'>info@srk-elite.com</p>
