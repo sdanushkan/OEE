@@ -17,6 +17,15 @@ import cu from '../assets/cu.png'
 import we from '../assets/we.png'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { IoMailOutline, IoPhonePortraitOutline } from 'react-icons/io5'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/free-mode';
+
+import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
 
 
 const HomeScreen = () => {
@@ -28,25 +37,45 @@ const HomeScreen = () => {
     const [phoneNumber, setPhoneNumber] = useState('')
 
   return (
-    <div className='h-fit w-full flex flex-col gap-[50px]'>
-        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px]'>
-            <div className='h-fit w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center gap-[25px] md:gap-[150px] py-[50px]'>
-                <div className='h-fit w-full flex flex-col items-center justify-center md:items-start gap-[25px] max-w-[550px]'>
-                    <p className='text-3xl sm:text-4xl md:text-5xl md:font-bold text-center md:text-left font-semibold max-w-[500px]'>Overseas Education Consultants in Sri Lanka</p>
-                    <p className='text-sm text-center md:text-left opacity-50'>Best Overseas Education Consultants in Sri Lanka and Study Abroad Consultants in Colombo, Galle, Jaffna, Kandy, Dehiwala-Mount Lavinia, Maharagama, Moratuwa, Negombo, Pita Kotte, Sri Jayewardenepura, Trincomalee, Kalmunai, Sri lanka</p>
-                    <button className='h-[45px] px-[25px] flex items-center justify-center bg-blue-500 text-white rounded-[10px] capitalize'>
-                        Contact us
-                    </button>
-                </div>
-                <div className='h-[400px] md:w-[300px] lg:w-[500px]'>
-                    <div className='h-[400px] md:w-[300px] lg:w-[500px]'>
-                        <img alt='' src={hero1} className='h-full w-full object-contain scale-90 md:scale-100' />
+    <div className='h-fit w-full flex flex-col'>
+        <div className='h-[400px] w-full flex flex-col md:flex-row items-center justify-center relative '>
+                <div className='h-full w-full absolute z-20'>
+                    <div className='h-full w-full'>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                    
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                        <img alt='' src={"https://wanderlustcrew.com/wp-content/uploads/2023/02/Most-Beautiful-Places-in-Switzerland.jpeg"} className='h-[400px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?b=1&s=612x612&w=0&k=20&c=4LDQodvRga35i5ZjwGndBafplSk079tbS842IUks44Y="} className='h-[400px] w-full object-cover' />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                        <img alt='' src={"https://thumbs.dreamstime.com/b/thames-river-night-london-57632482.jpg"} className='h-[400px] w-full object-cover' />
+                        </SwiperSlide>
+                        
+                    </Swiper>
+
                     </div>
                 </div>
+                <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex items-center justify-center px-[25px] md:px-0'>
+                    <p className=' text-3xl sm:text-4xl md:text-5xl md:font-bold text-left md:text-center font-semibold max-w-[600px] text-white'>Your Trusted partner for Overseas Education Experience</p>
+                </div>
             </div>
-        </div> 
 
-        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] '>
+        {/* <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] '>
             <div className='h-fit w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center gap-[25px] md:gap-[150px] py-[50px]'>
                 <div className='h-fit w-full max-w-[400px]'>
                     <img alt='' src={herom} className='h-[300px] w-fit object-contain' />
@@ -69,13 +98,121 @@ const HomeScreen = () => {
                     </Link>
                 </div>
             </div>
+        </div> */}
+
+        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px]'>
+            <div className='h-fit w-full max-w-[1024px] mx-auto flex flex-col md:flex-row'>
+                <div className='h-[300px] w-full md:w-1/2 flex items-center justify-center '>
+                    <img alt='' src={hero1} className='max-h-[300px] h-full  w-fit object-contain' />
+                </div>
+                <div className='h-[300px] w-full md:w-1/2 flex flex-col justify-start gap-[25px]'>
+                <p className='text-center md:text-left font-semibold text-2xl uppercase'>overview</p>
+                <p className='text-center md:text-left text-sm'>At Overseas Education Consultancy, we are dedicated to guiding the aspirations of students towards a world-class education. Our unwavering commitment to excellence is the beacon that lights the path to academic success across Canada, the UK, Australia, Switzerland, and Europe. We empower individuals to unlock their full potential, simplifying the intricate journey of overseas education through unparalleled guidance and trust at the core of our services. We believe in nurturing dreams and building bridges to a brighter educational future. We're not just consultants; we're partners in your educational journey, ensuring your success in a global community of learners,</p>
+                </div>
+            </div>
         </div>
 
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] bg-[#f6f6f6] py-[50px]'>
             <div className='h-fit w-full max-w-[1024px] mx-auto'>
-                <p className='text-center font-semibold text-4xl'>Could Your Next Home Be?</p>
-                <div className='h-fit w-full gap-[25px] flex flex-col md:flex-row flex-wrap md:justify-center items-center py-[50px]'>
-                    <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] pt-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                <p className='text-center font-semibold text-4xl'>Are you contemplating this as your prospective new home?</p>
+                <div className='h-fit w-full gap-[25px] lg:flex flex-col md:flex-row flex-wrap md:justify-center items-center py-[50px] hidden'>
+
+                <Swiper
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    freeMode={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    modules={[FreeMode, Pagination, Autoplay]}
+                    className="w-full"
+                >
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://a.cdn-hotels.com/gdcs/production149/d121/06dc8ae0-c55c-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>Canada</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>australia</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>united kingdom</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://www.myglobalviewpoint.com/wp-content/uploads/2020/01/Most-beautiful-places-in-Switzerland.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>switzerland</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>europe </p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    
+                </Swiper>
+
+                    {/* <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                         <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
                             <img alt='' src='https://a.cdn-hotels.com/gdcs/production149/d121/06dc8ae0-c55c-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium' className='h-full w-full object-cover' />
                         </div>
@@ -87,7 +224,7 @@ const HomeScreen = () => {
                         </div>
                     </Link>
 
-                    <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] pt-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                    <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                         <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
                             <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
                         </div>
@@ -99,7 +236,7 @@ const HomeScreen = () => {
                         </div>
                     </Link>
 
-                    <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] pt-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                    <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                         <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
                             <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
                         </div>
@@ -111,7 +248,7 @@ const HomeScreen = () => {
                         </div>
                     </Link>
 
-                    <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] pt-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                    <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                         <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
                             <img alt='' src='https://www.myglobalviewpoint.com/wp-content/uploads/2020/01/Most-beautiful-places-in-Switzerland.jpg' className='h-full w-full object-cover' />
                         </div>
@@ -123,7 +260,7 @@ const HomeScreen = () => {
                         </div>
                     </Link>
 
-                    <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] pt-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                    <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                         <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
                             <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
                         </div>
@@ -133,25 +270,357 @@ const HomeScreen = () => {
                                 <BsArrowRight className='text-white'/>
                             </div>
                         </div>
+                    </Link> */}
+                </div>
+                <div className='h-fit w-full gap-[25px] hidden md:flex flex-col md:flex-row flex-wrap md:justify-center items-center py-[50px] lg:hidden'>
+
+                <Swiper
+                    slidesPerView={2}
+                    spaceBetween={30}
+                    freeMode={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    modules={[FreeMode, Pagination, Autoplay]}
+                    className="w-full"
+                >
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://a.cdn-hotels.com/gdcs/production149/d121/06dc8ae0-c55c-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>Canada</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>australia</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>united kingdom</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://www.myglobalviewpoint.com/wp-content/uploads/2020/01/Most-beautiful-places-in-Switzerland.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>switzerland</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>europe </p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    
+                </Swiper>
+
+                    {/* <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://a.cdn-hotels.com/gdcs/production149/d121/06dc8ae0-c55c-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>Canada</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
                     </Link>
+
+                    <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>australia</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://www.myglobalviewpoint.com/wp-content/uploads/2020/01/Most-beautiful-places-in-Switzerland.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>switzerland</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>europe </p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link> */}
+                </div>
+                <div className='h-fit w-full gap-[25px] flex md:hidden flex-col md:flex-row flex-wrap md:justify-center items-center py-[50px]'>
+
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    freeMode={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    modules={[FreeMode, Pagination, Autoplay]}
+                    className="w-full"
+                >
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://a.cdn-hotels.com/gdcs/production149/d121/06dc8ae0-c55c-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>Canada</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>australia</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>united kingdom</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://www.myglobalviewpoint.com/wp-content/uploads/2020/01/Most-beautiful-places-in-Switzerland.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>switzerland</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
+                        <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                            <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                                <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
+                            </div>
+                            <div className='h-[65px] w-full flex items-center justify-center relative'>
+                                <p className='capitalize font-semibold'>europe </p>
+                                <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                    <BsArrowRight className='text-white'/>
+                                </div>
+                            </div>
+                        </Link>
+                    </SwiperSlide>
+                    
+                </Swiper>
+
+                    {/* <Link to={'/canada'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://a.cdn-hotels.com/gdcs/production149/d121/06dc8ae0-c55c-11e8-9739-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>Canada</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>australia</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/switzerland'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://www.myglobalviewpoint.com/wp-content/uploads/2020/01/Most-beautiful-places-in-Switzerland.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>switzerland</p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to={'/europe'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
+                            <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
+                        </div>
+                        <div className='h-[65px] w-full flex items-center justify-center relative'>
+                            <p className='capitalize font-semibold'>europe </p>
+                            <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
+                                <BsArrowRight className='text-white'/>
+                            </div>
+                        </div>
+                    </Link> */}
                 </div>
             </div>
         </div>
 
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px]'>
-            <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col gap-[50px] md:pb-[50px]'>
+            <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col gap-[50px] md:py-[50px]'>
+
                 <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-                    <p className='capitalize text-center md:text-left text-3xl font-semibold'>Who Are We</p>
-                    <p className='text-sm opacity-50 text-center md:text-left'>Through a long history of change and development, GIEC Global has now become Sri Lanka’s most trusted and well-established education and migration agency. At GIEC Global Sri Lanka, we take pride in helping our clients in every step of the way to achieve their ultimate goals in Migration or Student Services. Since our establishment, we have several partners in various part of the world and we have expanded our company to Australia, India, UK,  and Canada. We are proud of our multilingual proficiency where our team members can communicate in over eight different languages (English, Sinhala, Hindi, Nepali, Punjabi, Maithili, Rajasthani, and Urdu). Our visa success and satisfied clients are the reasons for our fast growth. We have expertise in all kinds of Study Abroad and Immigration Services.</p>
-                </div>
-                <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-                    <p className='capitalize text-center md:text-left text-xl font-semibold'>Vission</p>
+                    <p className='uppercase text-center md:text-left text-2xl font-semibold'>Vission</p>
                     <p className='text-sm opacity-50 text-center md:text-left'>"At Overseas Education Consultancy, our vision is to be the guiding light for aspiring students, illuminating their path to world-class education. We strive to empower individuals with the knowledge and opportunities they need to unlock their full potential, enabling them to thrive in diverse academic landscapes across Canada, the UK, Australia, Switzerland, and Europe. Our commitment to excellence is unwavering, and we envision a future where every student's dream of international education becomes a reality."</p>
                 </div>
 
                 <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-                    <p className='capitalize text-center md:text-left text-xl font-semibold'>Mission</p>
+                    <p className='uppercase text-center md:text-left text-2xl font-semibold'>Mission</p>
                     <p className='text-sm opacity-50 text-center md:text-left'>"Our mission is to build bridges to a world-class education by offering unparalleled guidance and support for student visas to Canada, the UK, Australia, Switzerland, and Europe. With trust at the core of our services, we aim to simplify the complex journey of overseas education, providing a seamless experience. We are dedicated to nurturing dreams, fostering a diverse global community of learners, and ensuring that our students succeed in their academic pursuits. At Overseas Education Consultancy, we are more than just consultants; we are partners in your educational journey."</p>
+                </div>
+            </div>
+        </div>
+
+        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] '>
+            <div className='h-fit w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center gap-[25px] md:gap-[150px] py-[50px]'>
+                <div className='h-fit w-full max-w-[400px]'>
+                    <img alt='' src={pImg} className='h-[300px] w-fit object-contain' />
+                </div>
+                <div className='h-fit w-full flex flex-col gap-[10px]'>
+                    <p className='capitalize text-center md:text-left text-3xl font-semibold'>Services We provide</p>
+                    <ol className='list-disc px-[50px]'>
+                        <li className='text-base font-medium opacity-75'>Course, Country & University Selection</li>
+                        <li className='text-base font-medium opacity-75'>Application Assistance</li>
+                        <li className='text-base font-medium opacity-75'>Education fee Payments</li>
+                        <li className='text-base font-medium opacity-75'>Student Visa Assistance</li>
+                        <li className='text-base font-medium opacity-75'>InsuranceAssistance</li>
+                        <li className='text-base font-medium opacity-75'>Pre-Departure Orientation</li>
+                        <li className='text-base font-medium opacity-75'>Assistance on Arrival</li>
+                        <li className='text-base font-medium opacity-75'>Visa Filling & Documentation Assistance</li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -161,7 +630,8 @@ const HomeScreen = () => {
                 <div className='h-fit w-fit'>
                     <img alt='' src={hero2} className='h-[300px] w-fit object-contain' />
                 </div>
-                <div className='h-fit my-auto gap-[50px] md:gap-[100px] flex items-center'>
+                <div className='h-fit my-auto gap-[10px] flex flex-col items-center'>
+                <p className='capitalize text-center md:text-left text-3xl font-semibold'>Contact us</p>
                     <form className='w-full md:min-w-[400px] flex flex-col gap-[10px] py-[25px]'>
                         <div className='h-[50px] w-full relative'>
                             <input type='text' autoComplete={false} autoSave={false} required={true} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
@@ -200,7 +670,7 @@ const HomeScreen = () => {
                             </div>
                         </div>
                         <button className='h-[45px] w-fit mx-auto md:mx-0 px-[25px] flex items-center justify-center bg-blue-500 text-white rounded-[10px] capitalize mt-[10px]'>
-                            Contact us
+                            Submit
                         </button>
                     </form>
                 </div>

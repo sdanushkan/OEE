@@ -1,6 +1,16 @@
 import React, { useEffect } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { useLocation } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Canada = () => {
   
@@ -12,12 +22,44 @@ const Canada = () => {
   
   return (
     <div className='h-fit w-full'>
-      <div className='h-[300px] w-full relative'>
-        <img alt='' src='https://lp-cms-production.imgix.net/2021-04/GettyRF_1124659884.jpg?auto=format&q=75&w=1920' className='h-full w-full object-cover' />
-        <div className='h-[300px] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-transparent to-black/50 flex items-end py-[50px] justify-center'>
-          <p className='text-white text-center font-semibold text-3xl md:text-4xl'>Best Canada Student Visa Consultants In Sri Lanka</p>
-        </div>
-      </div>
+      <div className='h-[350px] w-full flex flex-col md:flex-row items-center justify-center relative '>
+                <div className='h-full w-full absolute z-20'>
+                    <div className='h-full w-full'>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                    
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                        <img alt='' src={"https://a.cdn-hotels.com/gdcs/production72/d1850/0bb0c864-bae4-42fd-9df9-dee0d5542461.jpg?impolicy=fcrop&w=800&h=533&q=medium"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://royalstockphoto.s3.amazonaws.com/wp-content/uploads/2017/10/03050159/x060x-Toronto-City-Hall-Night-Lights-Downtown-Ontario-Canada.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.coloradoexpression.com/content/uploads/2022/08/u/b/screen-shot-2022-08-23-at-103439-am-1024x470.png"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://cdn.sixtyandme.com/wp-content/uploads/2022/04/Sixty-and-Me_Exploring-5-of-Canadas-Most-Beautiful-Cities.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        
+                    </Swiper>
+
+                    </div>
+                </div>
+                <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex items-center justify-center px-[25px] md:px-0'>
+                    <p className=' text-3xl sm:text-4xl md:text-5xl md:font-bold text-left md:text-center font-semibold max-w-[600px] text-white'>Your Trusted partner for Overseas Education Experience</p>
+                </div>
+            </div>
 
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
