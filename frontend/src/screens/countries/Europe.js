@@ -71,20 +71,20 @@ const Europe = () => {
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
 
               <div className='h-fit w-full flex flex-col gap-[15px]'>
-              <p className='text-xl text-center md:text-left'>Our website is your passport to understanding the countless benefits of studying in Europe. Embark on a journey that promises academic excellence, cultural richness, and personal growth.</p>
+              <p className='text-xl text-left'>Our website is your passport to understanding the countless benefits of studying in Europe. Embark on a journey that promises academic excellence, cultural richness, and personal growth.</p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
-                <li className='text-lg opacity-75 text-center md:text-left' > Educational Diversity: Europe offers an extensive range of programs and institutions, from historic universities to innovative research centers.</li>
-                <li className='text-lg opacity-75 text-center md:text-left' >Multicultural Fusion: Immerse yourself in a diverse tapestry of cultures, languages, and traditions, expanding your global perspective.</li>
-                <li className='text-lg opacity-75 text-center md:text-left' >Easy Travel: Study in Europe, and you'll be a stone's throw away from exploring different countries and cultures during your academic journey.</li>
-                <li className='text-lg opacity-75 text-center md:text-left' >Scholarships Galore: Many European countries offer scholarships and financial aid to international students, making it an affordable choice.</li>
-                <li className='text-lg opacity-75 text-center md:text-left' > Rich History and Art: Walk in the footsteps of history's great minds, surrounded by Europe's rich art, architecture, and historical treasures.</li>
-                <li className='text-lg opacity-75 text-center md:text-left' > Language Learning: Enhance your language skills by studying in a multilingual environment, a valuable asset in the global job market.</li>
-                <li className='text-lg opacity-75 text-center md:text-left' > Safety and Sustainability: Europe is known for its safety, sustainability efforts, and commitment to a high quality of life.</li>
+                <li className='text-lg opacity-75 text-left' > Educational Diversity: Europe offers an extensive range of programs and institutions, from historic universities to innovative research centers.</li>
+                <li className='text-lg opacity-75 text-left' >Multicultural Fusion: Immerse yourself in a diverse tapestry of cultures, languages, and traditions, expanding your global perspective.</li>
+                <li className='text-lg opacity-75 text-left' >Easy Travel: Study in Europe, and you'll be a stone's throw away from exploring different countries and cultures during your academic journey.</li>
+                <li className='text-lg opacity-75 text-left' >Scholarships Galore: Many European countries offer scholarships and financial aid to international students, making it an affordable choice.</li>
+                <li className='text-lg opacity-75 text-left' > Rich History and Art: Walk in the footsteps of history's great minds, surrounded by Europe's rich art, architecture, and historical treasures.</li>
+                <li className='text-lg opacity-75 text-left' > Language Learning: Enhance your language skills by studying in a multilingual environment, a valuable asset in the global job market.</li>
+                <li className='text-lg opacity-75 text-left' > Safety and Sustainability: Europe is known for its safety, sustainability efforts, and commitment to a high quality of life.</li>
               </ol>
 
-              <p className='text-xl opacity-75 text-center md:text-left'>"Our website is your comprehensive resource for information on European study options, visa procedures, and cultural insights. Join us on this transformative educational voyage and choose Europe as your stepping stone to a brighter future!"</p>
+              <p className='text-xl opacity-75 text-left'>"Our website is your comprehensive resource for information on European study options, visa procedures, and cultural insights. Join us on this transformative educational voyage and choose Europe as your stepping stone to a brighter future!"</p>
           </div>
         </div>
       </div>
@@ -92,8 +92,8 @@ const Europe = () => {
       {/* <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-              <p className='capitalize text-center md:text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
-              <p className='text-xs opacity-75 text-center md:text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
+              <p className='capitalize text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
+              <p className='text-xs opacity-75 text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
           </div>
         </div>
       </div> */}

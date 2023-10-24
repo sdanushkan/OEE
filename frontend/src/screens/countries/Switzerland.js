@@ -69,23 +69,23 @@ const Switzerland = () => {
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
-              <p className='capitalize text-center md:text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p>
+              <p className='capitalize text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p>
               <div className='h-fit w-full flex flex-col gap-[15px]'>
             
-              <p className='text-xl opacity-75 text-center md:text-left'>Welcome to the ultimate source of information for those considering Switzerland as their study destination. Explore our website to uncover the compelling reasons why Switzerland stands out as a top choice.</p>
+              <p className='text-xl opacity-75 text-left'>Welcome to the ultimate source of information for those considering Switzerland as their study destination. Explore our website to uncover the compelling reasons why Switzerland stands out as a top choice.</p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
-                <li className='text-lg opacity-50 text-center md:text-left' >Academic Prestige: Switzerland is synonymous with academic excellence, boasting world-class universities and research opportunities.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Multilingual Advantage: Immerse yourself in a multilingual environment, sharpening your language skills while you study.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Innovation Hub: Switzerland is a global innovation and technology leader, offering cutting-edge programs in science, engineering, and business.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Cultural Diversity: In the heart of Europe, Switzerland is a melting pot of cultures, providing a rich and vibrant cultural experience.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Stunning Landscapes: From the Swiss Alps to pristine lakes, Switzerland's natural beauty provides the perfect backdrop for your academic journey.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Safety and Security: Experience a secure and welcoming environment that prioritizes the well-being of its residents, including international students.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Our website is your compass to navigate Switzerland's educational landscape. Discover courses, scholarships, and visa details, and embark on an extraordinary educational adventure in this Alpine paradise. Choose Switzerland and elevate your future!"</li>
+                <li className='text-lg opacity-50 text-left' >Academic Prestige: Switzerland is synonymous with academic excellence, boasting world-class universities and research opportunities.</li>
+                <li className='text-lg opacity-50 text-left' >Multilingual Advantage: Immerse yourself in a multilingual environment, sharpening your language skills while you study.</li>
+                <li className='text-lg opacity-50 text-left' >Innovation Hub: Switzerland is a global innovation and technology leader, offering cutting-edge programs in science, engineering, and business.</li>
+                <li className='text-lg opacity-50 text-left' >Cultural Diversity: In the heart of Europe, Switzerland is a melting pot of cultures, providing a rich and vibrant cultural experience.</li>
+                <li className='text-lg opacity-50 text-left' > Stunning Landscapes: From the Swiss Alps to pristine lakes, Switzerland's natural beauty provides the perfect backdrop for your academic journey.</li>
+                <li className='text-lg opacity-50 text-left' > Safety and Security: Experience a secure and welcoming environment that prioritizes the well-being of its residents, including international students.</li>
+                <li className='text-lg opacity-50 text-left' > Our website is your compass to navigate Switzerland's educational landscape. Discover courses, scholarships, and visa details, and embark on an extraordinary educational adventure in this Alpine paradise. Choose Switzerland and elevate your future!"</li>
               </ol>
 
-              <p className='text-xl opacity-75 text-center md:text-left'>Our website provides in-depth information on programs, scholarships, visa processes, and more. Let us guide you on your journey to academic success in Canada."</p>
+              <p className='text-xl opacity-75 text-left'>Our website provides in-depth information on programs, scholarships, visa processes, and more. Let us guide you on your journey to academic success in Canada."</p>
           </div>
         </div>
       </div>
@@ -93,8 +93,8 @@ const Switzerland = () => {
       {/* <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-              <p className='capitalize text-center md:text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
-              <p className='text-xs opacity-50 text-center md:text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
+              <p className='capitalize text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
+              <p className='text-xs opacity-50 text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
           </div>
         </div>
       </div> */}

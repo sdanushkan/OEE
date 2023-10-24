@@ -68,21 +68,21 @@ const Unitedstates = () => {
               {/* <p className='capitalize text-center md:text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
               <div className='h-fit w-full flex flex-col gap-[15px]'>
             
-              <p className='text-xl opacity-75 text-center md:text-left'>Welcome to our website, your one-stop destination for discovering why the United Kingdom is the ultimate choice for international students. Get ready to explore a world of possibilities.
+              <p className='text-xl opacity-75 text-left'>Welcome to our website, your one-stop destination for discovering why the United Kingdom is the ultimate choice for international students. Get ready to explore a world of possibilities.
 </p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
-                <li className='text-lg opacity-50 text-center md:text-left' >Academic Heritage: The UK is home to some of the world's most prestigious universities, known for their history of academic excellence and innovation.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Global Recognition: A UK degree is internationally respected, offering a strong foundation for your future career, wherever it may take you.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Cultural Melting Pot: Immerse yourself in a diverse, multicultural society, where you'll make friends from every corner of the globe.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >  Work and Study Opportunities: The UK's flexible visa policies allow you to work part-time during your studies and gain valuable experience.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Historical Riches: Walk through history with the UK's rich heritage, from castles and museums to modern cultural hubs.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Safety and Security: The UK prides itself on a safe and welcoming environment, ensuring your peace of mind.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Quality of Life: Enjoy a high standard of living, excellent healthcare, and a wealth of cultural experiences.</li>
+                <li className='text-lg opacity-50 text-left' >Academic Heritage: The UK is home to some of the world's most prestigious universities, known for their history of academic excellence and innovation.</li>
+                <li className='text-lg opacity-50 text-left' >Global Recognition: A UK degree is internationally respected, offering a strong foundation for your future career, wherever it may take you.</li>
+                <li className='text-lg opacity-50 text-left' >Cultural Melting Pot: Immerse yourself in a diverse, multicultural society, where you'll make friends from every corner of the globe.</li>
+                <li className='text-lg opacity-50 text-left' >  Work and Study Opportunities: The UK's flexible visa policies allow you to work part-time during your studies and gain valuable experience.</li>
+                <li className='text-lg opacity-50 text-left' > Historical Riches: Walk through history with the UK's rich heritage, from castles and museums to modern cultural hubs.</li>
+                <li className='text-lg opacity-50 text-left' > Safety and Security: The UK prides itself on a safe and welcoming environment, ensuring your peace of mind.</li>
+                <li className='text-lg opacity-50 text-left' > Quality of Life: Enjoy a high standard of living, excellent healthcare, and a wealth of cultural experiences.</li>
               </ol>
 
-              <p className='text-xl opacity-75 text-center md:text-left'>"Our website is your guide to courses, scholarships, visa procedures, and much more. Choose the United Kingdom as your academic destination and open the doors to a world of opportunities and academic distinction."</p>
+              <p className='text-xl opacity-75 text-left'>"Our website is your guide to courses, scholarships, visa procedures, and much more. Choose the United Kingdom as your academic destination and open the doors to a world of opportunities and academic distinction."</p>
           </div>
         </div>
       </div>

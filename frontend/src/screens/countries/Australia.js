@@ -66,23 +66,23 @@ const Australia = () => {
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
-              {/* <p className='capitalize text-center md:text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
+              {/* <p className='capitalize text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
               <div className='h-fit w-full flex flex-col gap-[15px]'>
             
-              <p className='text-xl opacity-75 text-center md:text-left'>Australia beckons with a world of educational possibilities, adventure, and personal growth. Dive into our website to understand why Australia is your gateway to a bright academic future.</p>
+              <p className='text-xl opacity-75 text-left'>Australia beckons with a world of educational possibilities, adventure, and personal growth. Dive into our website to understand why Australia is your gateway to a bright academic future.</p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
-                <li className='text-lg opacity-50 text-center md:text-left' >Academic Excellence: Australia boasts top-ranked universities and institutions, renowned for their cutting-edge research and high-quality education.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Global Recognition: Degrees earned in Australia are globally recognized and respected, opening doors to a multitude of career opportunities.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Multicultural Oasis: Embrace a diverse, inclusive society where you'll meet people from all corners of the world, fostering a global perspective.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Work While You Learn: Australia's student visa allows you to work part-time, gaining real-world experience while studying.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Nature's Paradise: From pristine beaches to the outback, Australia offers stunning natural beauty and endless adventures.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Safety and Security: Enjoy a safe and friendly environment, known for its welcoming locals and a strong commitment to student welfare.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Quality of Life: Australia consistently ranks high in terms of quality of life, healthcare, and overall well-being.</li>
+                <li className='text-lg opacity-50 text-left' >Academic Excellence: Australia boasts top-ranked universities and institutions, renowned for their cutting-edge research and high-quality education.</li>
+                <li className='text-lg opacity-50 text-left' >Global Recognition: Degrees earned in Australia are globally recognized and respected, opening doors to a multitude of career opportunities.</li>
+                <li className='text-lg opacity-50 text-left' >Multicultural Oasis: Embrace a diverse, inclusive society where you'll meet people from all corners of the world, fostering a global perspective.</li>
+                <li className='text-lg opacity-50 text-left' > Work While You Learn: Australia's student visa allows you to work part-time, gaining real-world experience while studying.</li>
+                <li className='text-lg opacity-50 text-left' > Nature's Paradise: From pristine beaches to the outback, Australia offers stunning natural beauty and endless adventures.</li>
+                <li className='text-lg opacity-50 text-left' >Safety and Security: Enjoy a safe and friendly environment, known for its welcoming locals and a strong commitment to student welfare.</li>
+                <li className='text-lg opacity-50 text-left' > Quality of Life: Australia consistently ranks high in terms of quality of life, healthcare, and overall well-being.</li>
               </ol>
 
-              <p className='text-xl opacity-75 text-center md:text-left'>"Our website is your ultimate resource for information on courses, scholarships, visas, and everything you need to know about studying in Australia. Let us be your guide on this remarkable journey to academic success Down Under."</p>
+              <p className='text-xl opacity-75 text-left'>"Our website is your ultimate resource for information on courses, scholarships, visas, and everything you need to know about studying in Australia. Let us be your guide on this remarkable journey to academic success Down Under."</p>
           </div>
         </div>
       </div>

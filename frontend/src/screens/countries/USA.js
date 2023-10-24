@@ -68,10 +68,10 @@ const USA = () => {
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
-              {/* <p className='capitalize text-center md:text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
+              {/* <p className='capitalize text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
               <div className='h-fit w-full flex flex-col gap-[15px]'>
             
-              <p className='text-xl opacity-75 text-center md:text-left font-medium'>Welcome to our website, your gateway to understanding why the United States is the ultimate destination for international students. Get ready to explore a land of boundless opportunities.</p>
+              <p className='text-xl opacity-75 text-left font-medium'>Welcome to our website, your gateway to understanding why the United States is the ultimate destination for international students. Get ready to explore a land of boundless opportunities.</p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
@@ -86,7 +86,7 @@ const USA = () => {
 </li>
               </ol>
 
-              <p className='text-xl opacity-75 text-center md:text-left font-medium'>"Our website is your compass to navigate the American education system. Discover information on programs, scholarships, visas, and more. Choose the USA and set your dreams in motion – here, your academic journey is an extraordinary adventure."</p>
+              <p className='text-xl opacity-75 text-left font-medium'>"Our website is your compass to navigate the American education system. Discover information on programs, scholarships, visas, and more. Choose the USA and set your dreams in motion – here, your academic journey is an extraordinary adventure."</p>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ const USA = () => {
       {/* <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-              <p className='capitalize text-center md:text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
+              <p className='capitalize text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
               <p className='text-xs opacity-50 text-center md:text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
           </div>
         </div>

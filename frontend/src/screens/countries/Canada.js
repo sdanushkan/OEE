@@ -64,22 +64,22 @@ const Canada = () => {
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
-              <p className='capitalize text-center md:text-left text-2xl font-semibold'>why to choose Canada for study:</p>
+              <p className='capitalize text-left text-2xl font-semibold'>why to choose Canada for study:</p>
               <div className='h-fit w-full flex flex-col gap-[15px]'>
-              <p className='text-base opacity-50 text-center md:text-left'>"Discover Canada: Your Path to Excellence in Education”</p>
-              <p className='text-xl opacity-75 text-center md:text-left'>Choosing Canada for your studies is a decision that promises academic excellence, cultural diversity, and a world of opportunities. Our website is your comprehensive guide to understanding why Canada is the ideal destination for international students.</p>
+              <p className='text-base opacity-50 text-left'>"Discover Canada: Your Path to Excellence in Education”</p>
+              <p className='text-xl opacity-75 text-left'>Choosing Canada for your studies is a decision that promises academic excellence, cultural diversity, and a world of opportunities. Our website is your comprehensive guide to understanding why Canada is the ideal destination for international students.</p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
-                <li className='text-lg opacity-50 text-center md:text-left' >World-Class Education: Canada is renowned for its high-quality education system, with top universities consistently ranking among the best globally.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Diverse and Inclusive Society: Experience a welcoming and multicultural environment that celebrates diversity and ensures all students feel at home.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Work and Immigration Opportunities: Benefit from post-graduate work permits and pathways to permanent residency, making Canada a launching pad for your career.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Stunning Natural Beauty: Immerse yourself in Canada's breathtaking landscapes, from the Rockies to the Northern Lights.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' >Safe and Secure: Enjoy a safe and peaceful environment that's conducive to learning and personal growth.</li>
-                <li className='text-lg opacity-50 text-center md:text-left' > Quality of Life: Canada consistently ranks high for quality of life, healthcare, and social services.</li>
+                <li className='text-lg opacity-50 text-left' >World-Class Education: Canada is renowned for its high-quality education system, with top universities consistently ranking among the best globally.</li>
+                <li className='text-lg opacity-50 text-left' >Diverse and Inclusive Society: Experience a welcoming and multicultural environment that celebrates diversity and ensures all students feel at home.</li>
+                <li className='text-lg opacity-50 text-left' >Work and Immigration Opportunities: Benefit from post-graduate work permits and pathways to permanent residency, making Canada a launching pad for your career.</li>
+                <li className='text-lg opacity-50 text-left' >Stunning Natural Beauty: Immerse yourself in Canada's breathtaking landscapes, from the Rockies to the Northern Lights.</li>
+                <li className='text-lg opacity-50 text-left' >Safe and Secure: Enjoy a safe and peaceful environment that's conducive to learning and personal growth.</li>
+                <li className='text-lg opacity-50 text-left' > Quality of Life: Canada consistently ranks high for quality of life, healthcare, and social services.</li>
               </ol>
 
-              <p className='text-xl opacity-75 text-center md:text-left'>Our website provides in-depth information on programs, scholarships, visa processes, and more. Let us guide you on your journey to academic success in Canada."</p>
+              <p className='text-xl opacity-75 text-left'>Our website provides in-depth information on programs, scholarships, visa processes, and more. Let us guide you on your journey to academic success in Canada."</p>
           </div>
         </div>
       </div>
