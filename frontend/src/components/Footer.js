@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
                 <p className='text-center md:text-left text-sm font-semibold'>OEC</p>
                 <div className=''>
-                    <p className='text-center md:text-left text-sm opacity-50'>— Building bridges to a world-class education—</p>
+                    <p className='text-center md:text-left text-sm opacity-50 capitalize'>— Building bridges to a world-class education—</p>
                 </div>
             </div>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>

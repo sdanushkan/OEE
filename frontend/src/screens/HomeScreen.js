@@ -71,8 +71,8 @@ const HomeScreen = () => {
                     </div>
                 </div>
                 <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex flex-col items-center justify-center px-[25px] md:px-0'>
-                    <p className=' text-4xl md:text-5xl text-left md:text-center font-medium max-w-[600px] text-white'>Overseas Education Consultancy </p>
-                    <p className=' text-xl text-left md:text-center max-w-[600px] text-white'> — Building bridges to a world-class education—</p>
+                    <p className=' text-4xl md:text-5xl text-left md:text-center font-medium max-w-[600px] text-white'>Overseas Education Consultancy</p>
+                    <p className=' text-xl text-left md:text-center max-w-[600px] text-white'> — Building bridges to a World-class education—</p>
                 </div>
             </div>
 
@@ -107,7 +107,7 @@ const HomeScreen = () => {
                     <img alt='' src={hero1} className='max-h-[300px] h-full  w-fit object-contain' />
                 </div>
                 <div className='h-[300px] w-full md:w-1/2 flex flex-col justify-start gap-[25px]'>
-                <p className='text-center md:text-left font-semibold text-2xl capitalize'>your trusted partner for overseas educatio Experience</p>
+                <p className='text-center md:text-left font-semibold text-2xl capitalize'>your trusted partner for overseas education Experience</p>
                 <p className='text-center md:text-left text-sm'>At Overseas Education Consultancy, we are dedicated to guiding the aspirations of students towards a world-class education. Our unwavering commitment to excellence is the beacon that lights the path to academic success across Canada, the UK, Australia, Switzerland, and Europe. We empower individuals to unlock their full potential, simplifying the intricate journey of overseas education through unparalleled guidance and trust at the core of our services. We believe in nurturing dreams and building bridges to a brighter educational future. We're not just consultants; we're partners in your educational journey, ensuring your success in a global community of learners,</p>
                 </div>
             </div>
