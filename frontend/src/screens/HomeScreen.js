@@ -696,9 +696,9 @@ const HomeScreen = () => {
 
                             </div>
                         </div>
-                        <div className='h-[50px] w-full relative'>
-                            <input type='text' autoComplete={false} autoSave={false} required={true} value={textBox} onChange={(e) => setTextBox(e.target.value)} placeholder='Subject' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
-                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                        <div className='h-[100px] w-full relative flex items-start'>
+                            <input type='text' autoComplete={false} autoSave={false} required={true} value={textBox} onChange={(e) => setTextBox(e.target.value)} placeholder='Subject' className='h-[100px] w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <div className='h-[100px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
                                 <MdOutlineSubject className='text-2xl'/>
                             </div>
                             <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>

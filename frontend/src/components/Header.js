@@ -69,20 +69,20 @@ const Header = () => {
             navbar?
             <div className='h-screen w-full bg-white flex items-center justify-center px-[15px] sm:px-[25px] md:px-[50px] md:hidden'>
                 <div className='flex flex-col gap-[10px] -mt-[150px]'>
+                    <Link to={'/'} onClick={navbarHandler} className='h-[40px] w-full flex items-center justify-center'>
+                        <p className='opacity-50 capitalize text-center'>Home</p>
+                    </Link>
                     <button className='h-[40px] w-full flex items-center justify-center'>
-                        <p className='opacity-50 lowercase text-center'>Home</p>
-                    </button>
-                    <button className='h-[40px] w-full flex items-center justify-center'>
-                        <p className='opacity-50 lowercase text-center'>Services</p>
+                        <p className='opacity-50 capitalize text-center'>Services</p>
                     </button>
                     <button onClick={() => {
                         navbarHandler();
                         contactUS();
                     }} className='h-[40px] w-full flex items-center justify-center'>
-                        <p className='opacity-50 lowercase text-center'>Contact us</p>
+                        <p className='opacity-50 capitalize text-center'>Contact us</p>
                     </button>
                     <Link to={'/about'} onClick={navbarHandler} className='h-[40px] w-full flex items-center justify-center'>
-                        <p className='opacity-50 lowercase text-center'>about us</p>
+                        <p className='opacity-50 capitalize text-center'>about us</p>
                     </Link>
                 </div>
             </div>
