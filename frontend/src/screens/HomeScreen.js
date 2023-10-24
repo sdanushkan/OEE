@@ -64,7 +64,11 @@ const HomeScreen = () => {
 
                         <SwiperSlide>
                         <img alt='' src={"https://thumbs.dreamstime.com/b/thames-river-night-london-57632482.jpg"} className='h-[400px] w-full object-cover' />
-                        </SwiperSlide>
+                        </SwiperSlide> 
+
+                        <SwiperSlide>
+                        <img alt='' src={"https://www.timeshighereducation.com/student/sites/default/files/sydney_0.jpg"} className='h-[400px] w-full object-cover' />
+                        </SwiperSlide> 
                         
                     </Swiper>
 
@@ -72,7 +76,7 @@ const HomeScreen = () => {
                 </div>
                 <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex flex-col items-center justify-center px-[25px] md:px-0'>
                     <p className=' text-4xl md:text-5xl text-left md:text-center font-medium max-w-[600px] text-white'>Overseas Education Consultancy</p>
-                    <p className=' text-xl text-left md:text-center max-w-[600px] text-white'> — Building bridges to a World-class education—</p>
+                    <p className=' text-xl text-left md:text-center max-w-[625px] text-white'> — Building Bridges to a World-Class Education—</p> 
                 </div>
             </div>
 
