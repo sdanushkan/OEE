@@ -44,7 +44,11 @@ const Header = () => {
     }
 
   return (
-    <div className="h-fit w-full z-50 relative top-0 bg-white">
+    <div className={
+        navbar?
+        "h-fit w-full z-50 bg-white fixed top-0":
+        "h-fit w-full z-50 relative top-0 bg-white"
+    }>
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
             <div className='h-[100px] w-full max-w-[1300px] mx-auto flex items-center justify-between'>
                 <Link to={'/'} className='h-fit w-fit text-xl font-semibold tracking-wider uppercase opacity-75'>
@@ -61,7 +65,7 @@ const Header = () => {
                 </button>
             </div>
         </div> 
-        {/* {
+        {
             navbar?
             <div className='h-screen w-full bg-white flex items-center justify-center px-[15px] sm:px-[25px] md:px-[50px] md:hidden'>
                 <div className='flex flex-col gap-[10px] -mt-[150px]'>
@@ -71,17 +75,20 @@ const Header = () => {
                     <button className='h-[40px] w-full flex items-center justify-center'>
                         <p className='opacity-50 lowercase text-center'>Services</p>
                     </button>
-                    <button className='h-[40px] w-full flex items-center justify-center'>
+                    <button onClick={() => {
+                        navbarHandler();
+                        contactUS();
+                    }} className='h-[40px] w-full flex items-center justify-center'>
                         <p className='opacity-50 lowercase text-center'>Contact us</p>
                     </button>
-                    <button className='h-[40px] w-full flex items-center justify-center'>
+                    <Link to={'/about'} onClick={navbarHandler} className='h-[40px] w-full flex items-center justify-center'>
                         <p className='opacity-50 lowercase text-center'>about us</p>
-                    </button>
+                    </Link>
                 </div>
             </div>
             :
             ""
-        }   */}
+        }  
     </div>
   )
 }

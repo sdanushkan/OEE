@@ -64,7 +64,7 @@ const AboutUsScreen = () => {
                 </div>
             </div>
 
-            <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px]'>
+            <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px] '>
             <div className='h-fit w-full max-w-[1024px] mx-auto flex flex-col md:flex-row'>
                 <div className='h-[300px] w-full md:w-1/2 flex items-center justify-center '>
                     <img alt='' src={hero1} className='max-h-[300px] h-full  w-fit object-contain' />
