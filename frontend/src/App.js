@@ -16,6 +16,7 @@ import Australia from './screens/countries/Australia';
 import Unitedstates from './screens/countries/Unitedstates';
 import Switzerland from './screens/countries/Switzerland';
 import Europe from './screens/countries/Europe';
+import USA from './screens/countries/USA'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/' element={<HomeScreen/>} />
         <Route path='/canada' element={<Canada/>} />
         <Route path='/australia' element={<Australia/>} />
+        <Route path='/USA' element={<USA/>} />
         <Route path='/unitedstates' element={<Unitedstates/>} />
         <Route path='/switzerland' element={<Switzerland/>} />
         <Route path='/Europe' element={<Europe/>} />

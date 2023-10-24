@@ -70,8 +70,9 @@ const HomeScreen = () => {
 
                     </div>
                 </div>
-                <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex items-center justify-center px-[25px] md:px-0'>
-                    <p className=' text-3xl sm:text-4xl md:text-5xl md:font-bold text-left md:text-center font-semibold max-w-[600px] text-white'>Your Trusted partner for Overseas Education Experience</p>
+                <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex flex-col items-center justify-center px-[25px] md:px-0'>
+                    <p className=' text-3xl sm:text-4xl md:text-5xl text-left md:text-center font-medium max-w-[600px] text-white'>Overseas Education Consultancy </p>
+                    <p className=' text-xl text-left md:text-center max-w-[600px] text-white'> — Building bridges to a world-class education—</p>
                 </div>
             </div>
 
@@ -114,7 +115,7 @@ const HomeScreen = () => {
 
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] bg-[#f6f6f6] py-[50px]'>
             <div className='h-fit w-full max-w-[1024px] mx-auto'>
-                <p className='text-center font-semibold text-4xl'>Are you contemplating this as your prospective new home?</p>
+                <p className='text-center font-semibold text-4xl capitalize'>Are you contemplating this as your prospective new home?</p>
                 <div className='h-fit w-full gap-[25px] lg:flex flex-col md:flex-row flex-wrap md:justify-center items-center py-[50px] hidden'>
 
                 <Swiper
@@ -147,7 +148,7 @@ const HomeScreen = () => {
                     <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
                         <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                             <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
-                                <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                                <img alt='' src='https://c.ndtvimg.com/2023-04/iqjm8vv_sydney_625x300_17_April_23.jpg?im=Resize=(1230,900)' className='h-full w-full object-cover' />
                             </div>
                             <div className='h-[65px] w-full flex items-center justify-center relative'>
                                 <p className='capitalize font-semibold'>australia</p>
@@ -184,12 +185,12 @@ const HomeScreen = () => {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
-                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <Link to={'/USA'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                             <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
-                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                                <img alt='' src='https://cdn-imgix.headout.com/mircobrands-content/image/65e5304b6dd876f826e3510e8bda0e31-Empire%20State%20Building%20and%20statue%20of%20liberty.jpeg' className='h-full w-full object-cover' />
                             </div>
                             <div className='h-[65px] w-full flex items-center justify-center relative'>
-                                <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                                <p className='capitalize font-semibold'>USA</p>
                                 <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
                                     <BsArrowRight className='text-white'/>
                                 </div>
@@ -241,7 +242,7 @@ const HomeScreen = () => {
                             <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
                         </div>
                         <div className='h-[65px] w-full flex items-center justify-center relative'>
-                            <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                            <p className='capitalize font-semibold'>USA</p>
                             <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
                                 <BsArrowRight className='text-white'/>
                             </div>
@@ -304,7 +305,7 @@ const HomeScreen = () => {
                     <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
                         <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                             <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
-                                <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                                <img alt='' src='https://c.ndtvimg.com/2023-04/iqjm8vv_sydney_625x300_17_April_23.jpg?im=Resize=(1230,900)' className='h-full w-full object-cover' />
                             </div>
                             <div className='h-[65px] w-full flex items-center justify-center relative'>
                                 <p className='capitalize font-semibold'>australia</p>
@@ -341,12 +342,12 @@ const HomeScreen = () => {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
-                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <Link to={'/USA'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                             <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
-                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                                <img alt='' src='https://cdn-imgix.headout.com/mircobrands-content/image/65e5304b6dd876f826e3510e8bda0e31-Empire%20State%20Building%20and%20statue%20of%20liberty.jpeg' className='h-full w-full object-cover' />
                             </div>
                             <div className='h-[65px] w-full flex items-center justify-center relative'>
-                                <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                                <p className='capitalize font-semibold'>USA</p>
                                 <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
                                     <BsArrowRight className='text-white'/>
                                 </div>
@@ -398,7 +399,7 @@ const HomeScreen = () => {
                             <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
                         </div>
                         <div className='h-[65px] w-full flex items-center justify-center relative'>
-                            <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                            <p className='capitalize font-semibold'>USA</p>
                             <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
                                 <BsArrowRight className='text-white'/>
                             </div>
@@ -461,7 +462,7 @@ const HomeScreen = () => {
                     <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
                         <Link to={'/australia'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                             <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
-                                <img alt='' src='https://ichef.bbci.co.uk/news/976/cpsprodpb/10A3C/production/_129365186_gettyimages-103455489.jpg' className='h-full w-full object-cover' />
+                                <img alt='' src='https://c.ndtvimg.com/2023-04/iqjm8vv_sydney_625x300_17_April_23.jpg?im=Resize=(1230,900)' className='h-full w-full object-cover' />
                             </div>
                             <div className='h-[65px] w-full flex items-center justify-center relative'>
                                 <p className='capitalize font-semibold'>australia</p>
@@ -498,12 +499,12 @@ const HomeScreen = () => {
                         </Link>
                     </SwiperSlide>
                     <SwiperSlide className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] '>
-                        <Link to={'/unitedstates'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
+                        <Link to={'/USA'} className='h-fit w-full max-w-[300px] px-[10px] bg-white rounded-[25px] hover:scale-105 duration-300'>
                             <div className='h-[200px] w-full bg-white rounded-[15px] overflow-hidden'>
-                                <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
+                                <img alt='' src='https://cdn-imgix.headout.com/mircobrands-content/image/65e5304b6dd876f826e3510e8bda0e31-Empire%20State%20Building%20and%20statue%20of%20liberty.jpeg' className='h-full w-full object-cover' />
                             </div>
                             <div className='h-[65px] w-full flex items-center justify-center relative'>
-                                <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                                <p className='capitalize font-semibold'>USA</p>
                                 <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
                                     <BsArrowRight className='text-white'/>
                                 </div>
@@ -555,7 +556,7 @@ const HomeScreen = () => {
                             <img alt='' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2018/08/big-ben.jpg' className='h-full w-full object-cover' />
                         </div>
                         <div className='h-[65px] w-full flex items-center justify-center relative'>
-                            <p className='capitalize font-semibold'>unitedstates kingdom</p>
+                            <p className='capitalize font-semibold'>USA</p>
                             <div className='absolute h-[50px] w-[50px] flex items-center justify-center bg-blue-500 rounded-full right-0'>
                                 <BsArrowRight className='text-white'/>
                             </div>

@@ -1,6 +1,17 @@
 import React, { useEffect } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { useLocation } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 
 const Europe = () => {
   
@@ -12,10 +23,69 @@ const Europe = () => {
   
   return (
     <div className='h-fit w-full'>
-      <div className='h-[300px] w-full relative'>
-        <img alt='' src='https://image.jimcdn.com/app/cms/image/transf/dimension=1190x10000:format=jpg/path/sa6549607c78f5c11/image/i2c81a69087b406ef/version/1456237268/most-beautiful-landscapes-in-europe-hallstatt-copyright-canadastock-european-best-destinations.jpg' className='h-full w-full object-cover' />
-        <div className='h-[300px] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-transparent to-black/50 flex items-end py-[50px] justify-center'>
-          <p className='text-white text-center font-semibold text-3xl md:text-4xl'>Best Europe Visa Consultants In Sri Lanka</p>
+      <div className='h-[350px] w-full flex flex-col md:flex-row items-center justify-center relative '>
+                <div className='h-full w-full absolute z-20'>
+                    <div className='h-full w-full'>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                    
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                        <img alt='' src={"https://static.toiimg.com/thumb/msid-87137761,width-748,height-499,resizemode=4,imgsize-101646/.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://traveltomorrow.com/wp-content/uploads/2021/02/147677254_2935210533472459_996703284364145499_n.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://www.travelandleisure.com/thmb/9WFBvvcWb6iprVAnByZKvCTs_9E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-hallstatt-austria-BEAUTEURO0323-640d96b8cfd141c9af4582fd1f11bb42.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://www.orangewayfarer.com/wp-content/uploads/2020/03/cinque-terre.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://bestthingstodoinyork.co.uk/wp-content/uploads/2023/01/bridge-2715_960_720.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        
+                    </Swiper>
+
+                    </div>
+                </div>
+                <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex items-center justify-center px-[25px] md:px-0'>
+                    <p className=' text-3xl sm:text-4xl md:text-5xl md:font-bold text-left md:text-center font-semibold max-w-[600px] text-white'>Explore Europe: Your Gateway to World-Class Education</p>
+                </div>
+            </div>
+  
+
+      <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
+        <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
+          <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
+
+              <div className='h-fit w-full flex flex-col gap-[15px]'>
+              <p className='text-xl text-center md:text-left'>Our website is your passport to understanding the countless benefits of studying in Europe. Embark on a journey that promises academic excellence, cultural richness, and personal growth.</p>
+              </div>
+
+              <ol className='list-decimal px-[50px]'>
+                <li className='text-lg opacity-75 text-center md:text-left' > Educational Diversity: Europe offers an extensive range of programs and institutions, from historic universities to innovative research centers.</li>
+                <li className='text-lg opacity-75 text-center md:text-left' >Multicultural Fusion: Immerse yourself in a diverse tapestry of cultures, languages, and traditions, expanding your global perspective.</li>
+                <li className='text-lg opacity-75 text-center md:text-left' >Easy Travel: Study in Europe, and you'll be a stone's throw away from exploring different countries and cultures during your academic journey.</li>
+                <li className='text-lg opacity-75 text-center md:text-left' >Scholarships Galore: Many European countries offer scholarships and financial aid to international students, making it an affordable choice.</li>
+                <li className='text-lg opacity-75 text-center md:text-left' > Rich History and Art: Walk in the footsteps of history's great minds, surrounded by Europe's rich art, architecture, and historical treasures.</li>
+                <li className='text-lg opacity-75 text-center md:text-left' > Language Learning: Enhance your language skills by studying in a multilingual environment, a valuable asset in the global job market.</li>
+                <li className='text-lg opacity-75 text-center md:text-left' > Safety and Sustainability: Europe is known for its safety, sustainability efforts, and commitment to a high quality of life.</li>
+              </ol>
+
+              <p className='text-xl opacity-75 text-center md:text-left'>"Our website is your comprehensive resource for information on European study options, visa procedures, and cultural insights. Join us on this transformative educational voyage and choose Europe as your stepping stone to a brighter future!"</p>
+          </div>
         </div>
       </div>
 
@@ -23,7 +93,7 @@ const Europe = () => {
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
           <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
               <p className='capitalize text-center md:text-left text-2xl font-semibold'>Your Gateway to UK Immigration Excellence: GIEC Global Sri Lanka</p>
-              <p className='text-xs opacity-50 text-center md:text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
+              <p className='text-xs opacity-75 text-center md:text-left'>We at GIEC GLOBAL Sri Lanka are cognizant of the significance of UK immigration and the possibilities it might offer. With our broad spectrum of immigration services, we require you to be your reliable guide as you manage the complicated rules of the UK immigration system and progress towards your goals.</p>
           </div>
         </div>
       </div> */}

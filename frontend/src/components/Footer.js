@@ -1,6 +1,7 @@
 import React from 'react'
 import logo1 from '../assets/logo1.png'
 import { Link, useLocation } from 'react-router-dom'
+import { BsFacebook, BsWhatsapp } from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
                 <p className='text-center md:text-left text-sm font-semibold'>OEC</p>
                 <div className=''>
-                    <p className='text-center md:text-left text-sm opacity-50'>Your Trusted partner for Overseas Education Experience</p>
+                    <p className='text-center md:text-left text-sm opacity-50'>— Building bridges to a world-class education—</p>
                 </div>
             </div>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
@@ -23,8 +24,12 @@ const Footer = () => {
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
                 <p className='text-center md:text-left text-sm font-semibold'>Social media</p>
                 <div className='flex flex-col gap-[10px]'>
-                    <p className='text-center md:text-left text-sm opacity-50'>facebook</p>
-                    <p className='text-center md:text-left text-sm opacity-50'>Watchapp</p>
+                    <p className='text-center md:text-left text-sm opacity-50'>
+                        <BsFacebook/>
+                    </p>
+                    <p className='text-center md:text-left text-sm opacity-50'>
+                        <BsWhatsapp/>
+                    </p>
                 </div>
             </div>
         </div>

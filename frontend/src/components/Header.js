@@ -30,7 +30,7 @@ const Header = () => {
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
             <div className='h-[100px] w-full max-w-[1300px] mx-auto flex items-center justify-between'>
                 <Link to={'/'} className='h-fit w-fit text-xl font-semibold tracking-wider uppercase opacity-75'>
-                    <img alt='' src={logo1} className='h-[65px] w-fit object-contain' />
+                    <img alt='' src={logo1} className='h-[75px] w-fit object-contain' />
                 </Link>
                 <div className='hidden md:flex items-center gap-[25px]'>
                     <p className='uppercase text-sm font-medium'>Home</p>

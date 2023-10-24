@@ -1,6 +1,16 @@
 import React, { useEffect } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import { useLocation } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Australia = () => {
   
@@ -12,18 +22,67 @@ const Australia = () => {
   
   return (
     <div className='h-fit w-full'>
-      <div className='h-[300px] w-full relative'>
-        <img alt='' src='https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/cmsfeatured/best-cities-in-australia-sydney-1554104907-785X440.jpg' className='h-full w-full object-cover' />
-        <div className='h-[300px] w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-b from-transparent to-black/50 flex items-end py-[50px] justify-center'>
-          <p className='text-white text-center font-semibold text-3xl md:text-4xl'>Best Australian Migration Agents in Sri Lanka</p>
-        </div>
-      </div>
+      <div className='h-[350px] w-full flex flex-col md:flex-row items-center justify-center relative '>
+                <div className='h-full w-full absolute z-20'>
+                    <div className='h-full w-full'>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                    
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                        <img alt='' src={"https://www.earthsattractions.com/wp-content/uploads/2018/08/sydney_opera-unsplash.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://cdn.kimkim.com/files/a/content_articles/featured_photos/d544e52c909b8e7c801ddeaa61904ab0ff21cb7a/big-0a17e223ef20a98578fff8e8398571d2.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://travelexperta.com/wp-content/uploads/2019/11/load-image-2.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <img alt='' src={"https://www.timeshighereducation.com/student/sites/default/files/sydney_0.jpg"} className='h-[350px] w-full object-cover' />
+                        </SwiperSlide>
+                        
+                    </Swiper>
+
+                    </div>
+                </div>
+                <div className='h-full w-full absolute z-30 bg-gradient-to-b from-transparent to-black/75 flex items-center justify-center px-[25px] md:px-0'>
+                    <p className=' text-3xl sm:text-4xl md:text-5xl md:font-bold text-left md:text-center font-semibold max-w-[600px] text-white'>Unlock Your Future: Why Choose Australia for Study</p>
+                </div>
+            </div>
+   
+      
 
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] md:py-[50px]'>
-          <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-              <p className='capitalize text-center md:text-left text-2xl font-semibold'>Why Australia?</p>
-              <p className='text-xs opacity-50 text-center md:text-left'>Australians have access to a high level of living, first-rate medical care, top-notch education, and a thriving multicultural community. Australia captivates people with its diversity, inventiveness, and laid-back lifestyle, from its magnificent landscapes to its bustling cities. Whether you want to establish a lucrative profession, give your kids access to top-notch educational possibilities,</p>
+          <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[25px]'>
+              {/* <p className='capitalize text-center md:text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
+              <div className='h-fit w-full flex flex-col gap-[15px]'>
+            
+              <p className='text-xl opacity-75 text-center md:text-left'>Australia beckons with a world of educational possibilities, adventure, and personal growth. Dive into our website to understand why Australia is your gateway to a bright academic future.</p>
+              </div>
+
+              <ol className='list-decimal px-[50px]'>
+                <li className='text-lg opacity-50 text-center md:text-left' >Academic Excellence: Australia boasts top-ranked universities and institutions, renowned for their cutting-edge research and high-quality education.</li>
+                <li className='text-lg opacity-50 text-center md:text-left' >Global Recognition: Degrees earned in Australia are globally recognized and respected, opening doors to a multitude of career opportunities.</li>
+                <li className='text-lg opacity-50 text-center md:text-left' >Multicultural Oasis: Embrace a diverse, inclusive society where you'll meet people from all corners of the world, fostering a global perspective.</li>
+                <li className='text-lg opacity-50 text-center md:text-left' > Work While You Learn: Australia's student visa allows you to work part-time, gaining real-world experience while studying.</li>
+                <li className='text-lg opacity-50 text-center md:text-left' > Nature's Paradise: From pristine beaches to the outback, Australia offers stunning natural beauty and endless adventures.</li>
+                <li className='text-lg opacity-50 text-center md:text-left' >Safety and Security: Enjoy a safe and friendly environment, known for its welcoming locals and a strong commitment to student welfare.</li>
+                <li className='text-lg opacity-50 text-center md:text-left' > Quality of Life: Australia consistently ranks high in terms of quality of life, healthcare, and overall well-being.</li>
+              </ol>
+
+              <p className='text-xl opacity-75 text-center md:text-left'>"Our website is your ultimate resource for information on courses, scholarships, visas, and everything you need to know about studying in Australia. Let us be your guide on this remarkable journey to academic success Down Under."</p>
           </div>
         </div>
       </div>
