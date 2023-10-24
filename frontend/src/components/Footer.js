@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
-                <p className='w-full text-center md:text-left text-sm font-semibold'>Social media</p>
+                <p className='w-full md:text-left text-sm font-semibold'>Social media</p>
                 <div className='w-full flex justify-center gap-[10px]'>
                     <p className='text-center md:text-left text-sm opacity-50'>
                         <BsFacebook/>
