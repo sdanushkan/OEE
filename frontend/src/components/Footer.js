@@ -2,6 +2,7 @@ import React from 'react'
 import logo1 from '../assets/logo1.png'
 import { Link, useLocation } from 'react-router-dom'
 import { BsFacebook, BsWhatsapp } from 'react-icons/bs'
+import ReactWhatsapp from 'react-whatsapp';
 
 const Footer = () => {
   return (
@@ -23,13 +24,13 @@ const Footer = () => {
             </div>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
                 <p className='w-full md:text-left text-sm font-semibold'>Social media</p>
-                <div className='w-full flex justify-center gap-[10px]'>
-                    <p className='text-center md:text-left text-sm opacity-50'>
+                <div className='w-full flex justify-center md:justify-start gap-[10px]'>
+                    {/* <p className='text-center md:text-left text-sm opacity-50'>
                         <BsFacebook/>
-                    </p>
-                    <p className='text-center md:text-left text-sm opacity-50'>
-                        <BsWhatsapp/>
-                    </p>
+                    </p> */}
+                    <ReactWhatsapp number="+94701999955" message="Hello!!!" className='text-center md:text-left text-sm opacity-50'>
+                        <BsWhatsapp className='text-2xl'/>
+                    </ReactWhatsapp>
                 </div>
             </div>
         </div>
