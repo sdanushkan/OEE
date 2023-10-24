@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbe2bd8c.css",
-    "main.js": "/static/js/main.d9c101db.js",
+    "main.css": "/static/css/main.93245076.css",
+    "main.js": "/static/js/main.59f185c0.js",
     "static/media/herom.png": "/static/media/herom.b438a4f1e2c2f4e218e7.png",
     "static/media/we.png": "/static/media/we.2c108254042e4583f851.png",
     "static/media/cu.png": "/static/media/cu.0108d9498a755dd5f168.png",
@@ -12,11 +12,11 @@
     "static/media/SRKlogo.png": "/static/media/SRKlogo.4206bbaf3272ad9d45f9.png",
     "static/media/logo1.png": "/static/media/logo1.4206bbaf3272ad9d45f9.png",
     "index.html": "/index.html",
-    "main.bbe2bd8c.css.map": "/static/css/main.bbe2bd8c.css.map",
-    "main.d9c101db.js.map": "/static/js/main.d9c101db.js.map"
+    "main.93245076.css.map": "/static/css/main.93245076.css.map",
+    "main.59f185c0.js.map": "/static/js/main.59f185c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbe2bd8c.css",
-    "static/js/main.d9c101db.js"
+    "static/css/main.93245076.css",
+    "static/js/main.59f185c0.js"
   ]
 }

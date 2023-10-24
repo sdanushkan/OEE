@@ -69,9 +69,9 @@ const AboutUsScreen = () => {
                 <div className='h-[300px] w-full md:w-1/2 flex items-center justify-center '>
                     <img alt='' src={hero1} className='max-h-[300px] h-full  w-fit object-contain' />
                 </div>
-                <div className='h-[300px] w-full md:w-1/2 flex flex-col justify-start gap-[25px]'>
+                <div className='h-fit w-full md:w-1/2 flex flex-col justify-start gap-[25px]'>
                 <p className='text-center md:text-left font-semibold text-2xl capitalize'>your trusted partner for overseas education Experience</p>
-                <p className='text-center md:text-left text-sm'>At Overseas Education Consultancy, we are dedicated to guiding the aspirations of students towards a world-class education. Our unwavering commitment to excellence is the beacon that lights the path to academic success across Canada, the UK, Australia, Switzerland, and Europe. We empower individuals to unlock their full potential, simplifying the intricate journey of overseas education through unparalleled guidance and trust at the core of our services. We believe in nurturing dreams and building bridges to a brighter educational future. We're not just consultants; we're partners in your educational journey, ensuring your success in a global community of learners,</p>
+                <p className='text-justify text-sm'>At Overseas Education Consultancy, we are dedicated to guiding the aspirations of students towards a world-class education. Our unwavering commitment to excellence is the beacon that lights the path to academic success across Canada, the UK, Australia, Switzerland, and Europe. We empower individuals to unlock their full potential, simplifying the intricate journey of overseas education through unparalleled guidance and trust at the core of our services. We believe in nurturing dreams and building bridges to a brighter educational future. We're not just consultants; we're partners in your educational journey, ensuring your success in a global community of learners,</p>
                 </div>
             </div>
         </div>
@@ -80,12 +80,12 @@ const AboutUsScreen = () => {
 
                 <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
                     <p className='uppercase text-center md:text-left text-2xl font-semibold'>Vission</p>
-                    <p className='text-sm opacity-50 text-center md:text-left'>"At Overseas Education Consultancy, our vision is to be the guiding light for aspiring students, illuminating their path to world-class education. We strive to empower individuals with the knowledge and opportunities they need to unlock their full potential, enabling them to thrive in diverse academic landscapes across Canada, the UK, Australia, Switzerland, and Europe. Our commitment to excellence is unwavering, and we envision a future where every student's dream of international education becomes a reality."</p>
+                    <p className='text-sm opacity-50 text-justify'>"At Overseas Education Consultancy, our vision is to be the guiding light for aspiring students, illuminating their path to world-class education. We strive to empower individuals with the knowledge and opportunities they need to unlock their full potential, enabling them to thrive in diverse academic landscapes across Canada, the UK, Australia, Switzerland, and Europe. Our commitment to excellence is unwavering, and we envision a future where every student's dream of international education becomes a reality."</p>
                 </div>
 
                 <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
                     <p className='uppercase text-center md:text-left text-2xl font-semibold'>Mission</p>
-                    <p className='text-sm opacity-50 text-center md:text-left'>"Our mission is to build bridges to a world-class education by offering unparalleled guidance and support for student visas to Canada, the UK, Australia, Switzerland, and Europe. With trust at the core of our services, we aim to simplify the complex journey of overseas education, providing a seamless experience. We are dedicated to nurturing dreams, fostering a diverse global community of learners, and ensuring that our students succeed in their academic pursuits. At Overseas Education Consultancy, we are more than just consultants; we are partners in your educational journey."</p>
+                    <p className='text-sm opacity-50 text-justify'>"Our mission is to build bridges to a world-class education by offering unparalleled guidance and support for student visas to Canada, the UK, Australia, Switzerland, and Europe. With trust at the core of our services, we aim to simplify the complex journey of overseas education, providing a seamless experience. We are dedicated to nurturing dreams, fostering a diverse global community of learners, and ensuring that our students succeed in their academic pursuits. At Overseas Education Consultancy, we are more than just consultants; we are partners in your educational journey."</p>
                 </div>
             </div>
         </div>

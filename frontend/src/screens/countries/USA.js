@@ -102,14 +102,14 @@ const USA = () => {
 
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] bg-[#f6f6f6]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] gap-[10px]'>
-          <p className='text-3xl text-red-600 text-center font-semibold pb-[10px]'>FAQs</p>
+          <p className='text-3xl text-blue-500 text-center font-semibold pb-[10px]'>FAQs</p>
 
             <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
                 <p className='text-base font-semibold text-left'>Which consultant is best for UK immigration?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[10px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
                 <p className='text-xs text-left'>GIEC GLOBAL Sri Lanka is specialises in offering visas for skilled workers from the UK. Our specialists can help you with the application procedure for the following visa categories in addition to a UK skilled worker visa: Tier 1 visa for UK entrepreneurs. Visas for innovators and startups.</p>
               </div>
             </button>
@@ -118,7 +118,7 @@ const USA = () => {
                 <p className='text-base font-semibold text-left'>  What are the requirements to migrate to UK? </p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-disc'>
                   <li className='text-left'>The English Language Proficiency Test is required of you. IELTS and TOEFL are mostly included in this.</li>
                   <li className='text-left'>You should be a citizen of a nation that is not a part of the EEA, or European Economic Area.</li>
@@ -134,7 +134,7 @@ const USA = () => {
                 <p className='text-base font-semibold text-left'>  Why you should migrate to UK?  </p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-decimal md:px-[25px]'>
                   <li className='text-left'>Robust economy and well-established businesses</li>
                   <li className='text-left'>There is a huge need for competent workers to fuel its modern economy.</li>
@@ -149,7 +149,7 @@ const USA = () => {
                 <p className='text-base font-semibold text-left'> What IELTS score is required for UK immigration?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <p className='text-xs text-left'>
                 The university and subject you want to take will determine your IELTS score for the UK. Most UK colleges require a minimum IELTS score of 6.0 to 6.5, however selective institutions may demand a significantly higher score of 7 or above.
                 </p>

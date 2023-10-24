@@ -89,14 +89,14 @@ const Australia = () => {
 
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] bg-[#f6f6f6]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] gap-[10px]'>
-          <p className='text-3xl text-red-600 text-center font-semibold pb-[10px]'>FAQs</p>
+          <p className='text-3xl text-blue-500 text-center font-semibold pb-[10px]'>FAQs</p>
 
             <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
                 <p className='text-base font-semibold text-left'>Which consultant is best for Australia immigration?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[10px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
                 <p className='text-xs text-left'>GIEC GLOBAL Sri Lanka is the best Australian Migration Agents in Sri Lanka. We are highly reputed firm that is known for its experienced consultants for Australia immigration who can give you the best  advice at every step. It has a decade’s worth of experience making it a great place for everyone with a dream to move out of their homeland. If you are looking for the Australia Migration Agents in Sri Lanka Colombo, Galle, Kandy, Maharagama, Moratuwa, and Jaffna, Sri Lanka, contact us for best consultantion.</p>
               </div>
             </button>
@@ -105,7 +105,7 @@ const Australia = () => {
                 <p className='text-base font-semibold text-left'> What are the requirements to migrate to Australia?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-disc'>
                   <li className='text-left'>45 years of age</li>
                   <li className='text-left'>65 points in the Australian points grid</li>
@@ -121,7 +121,7 @@ const Australia = () => {
                 <p className='text-base font-semibold text-left'> Why you should migrate to Australia? </p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-decimal md:px-[25px]'>
                   <li className='text-left'>Job opportunities.</li>
                   <li className='text-left'>Freedom to Work.</li>
@@ -137,7 +137,7 @@ const Australia = () => {
                 <p className='text-base font-semibold text-left'> What IELTS score is required for Australia immigration? </p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <p className='text-xs text-left'>
                 You must get an IELTS score of at least 6.0 overall, with a minimum of 6.0 in each of the 4 sections. This will demonstrate the degree of ability in English that is necessary for this visa. GIEC GLOBAL Sri Lanka will help you to calculate your IELTS score if you need any kind of assistances regarding IELTS then we are always here for you that thing make us different and which is why we are the best Australian immigration lawyers in Sri Lanka 
                 </p>

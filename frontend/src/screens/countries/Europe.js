@@ -100,14 +100,14 @@ const Europe = () => {
 
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] bg-[#f6f6f6]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] gap-[10px]'>
-          <p className='text-3xl text-red-600 text-center font-semibold pb-[10px]'>FAQs</p>
+          <p className='text-3xl text-blue-500 text-center font-semibold pb-[10px]'>FAQs</p>
 
             <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
                 <p className='text-base font-semibold text-left'> Which consultancy is best for Europe immigration?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[10px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
                 <p className='text-xs text-left'>GIEC GLOBAL Sri Lanka is the best Europe immigration consultant in Galle, Sri Lanka. They helped hundreds of our clients to get their visa process very smooth, which is why we are the most trusted consultant for Europe</p>
               </div>
             </button>
@@ -116,7 +116,7 @@ const Europe = () => {
                 <p className='text-base font-semibold text-left'>Is Europe good for immigrants?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-disc'>
                   <li className='text-left'>No Restrictions</li>
                   <li className='text-left'>HealthCare Benefits</li>
@@ -139,7 +139,7 @@ const Europe = () => {
                 <p className='text-base font-semibold text-left'>  Documents required for Europe immigration </p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-disc md:px-[25px]'>
                   <li className='text-left'>birth certificates</li>
                   <li className='text-left'>marriage certificate</li>
@@ -155,7 +155,7 @@ const Europe = () => {
                 <p className='text-base font-semibold text-left'>What English test is required for Europe immigration?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <p className='text-xs text-left'>
                 An English language assessment for study, immigration, or employment is called IELTS. It is well acknowledged and respected on a global scale. You may evaluate your English language proficiency for studying in Europe by taking the IELTS Academic exam in your neighbourhood.
                 </p>

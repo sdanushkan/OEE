@@ -86,14 +86,14 @@ const Canada = () => {
 
       <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] bg-[#f6f6f6]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] gap-[10px]'>
-          <p className='text-3xl text-red-600 text-center font-semibold pb-[10px]'>FAQs</p>
+          <p className='text-3xl text-blue-500 text-center font-semibold pb-[10px]'>FAQs</p>
 
             <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
                 <p className='text-base font-semibold text-left'>Which is the best Canada Study visa consultant in Sri Lanka ?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[10px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
                 <p className='text-xs text-left'>We are the best Canada student visa consultants in Sri Lanka.  We are the most trusted Canada Student Visa Consultants Sri Lanka. If you want to peruse your study then we are the best Canada Education Agents in Sri Lanka</p>
               </div>
             </button>
@@ -102,7 +102,7 @@ const Canada = () => {
                 <p className='text-base font-semibold text-left'>How can I get student visa for Canada from Sri Lanka?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-decimal'>
                   <li className='text-left'>Passport</li>
                   <li className='text-left'>Passport-size photographs</li>
@@ -123,7 +123,7 @@ const Canada = () => {
                 <p className='text-base font-semibold text-left'>Benefits of study Canada?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[10px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
                 <p className='text-xs text-left'>In Canada, there is a high level of life. The same liberties and rights respect for human rights, equality, diversity, and a stable, peaceful society—that safeguard all Canadians are also advantageous to international students. </p>
               </div>
             </button>
@@ -132,7 +132,7 @@ const Canada = () => {
                 <p className='text-base font-semibold text-left'>What are the requirements for Canada Study Visa?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-red-600 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
                 <ol className='list-disc md:px-[25px]'>
                   <li className='text-left'>Valid Passport</li>
                   <li className='text-left'>Attested copies of 10th, 12th and Degree certificates</li>
