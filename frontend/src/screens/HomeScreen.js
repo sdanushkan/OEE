@@ -4,10 +4,10 @@ import hero2 from '../assets/hero2.png'
 import { Link, useLocation } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 import 'react-slideshow-image/dist/styles.css'
-import { BiWorld } from 'react-icons/bi'
-import { TbCloudComputing } from 'react-icons/tb'
+import { BiUserCircle, BiWorld } from 'react-icons/bi'
+import { TbCloudComputing, TbWorldUpload } from 'react-icons/tb'
 import { CgWebsite } from 'react-icons/cg'
-import { MdImportExport, MdOutlineModeOfTravel } from 'react-icons/md'
+import { MdImportExport, MdOutlineModeOfTravel, MdOutlineSubject } from 'react-icons/md'
 import { BsArrowRight } from 'react-icons/bs'
 import { IoIosMail } from 'react-icons/io'
 import RoundEllipse from '../assets/RoundEllipse.png'
@@ -26,15 +26,30 @@ import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
 
 import { Autoplay, Pagination, Navigation, FreeMode } from 'swiper/modules';
+import { createRequest } from '../actions/requestActions'
+import { useDispatch, useSelector } from 'react-redux'
+
+
 
 
 const HomeScreen = () => {
     const { ref:heroText, inView:isHeroText } = useInView({triggerOnce:true});
 
+    const requestCreate = useSelector(state => state.requestCreate)
+    const { error, loading, request, success } = requestCreate
+
+    const dispatch = useDispatch()
+
     const [email, setEmail] = useState('')
     const [name, setName] = useState('')
     const [country, setCountry] = useState('')
+    const [europeCountry, setEuropeCountry] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
+    const [textBox, setTextBox] = useState('')
+
+    const submitHandler = (name, email, phoneNumber, country, textBox, europeCountry) => {
+        dispatch(createRequest(name, email, phoneNumber, country, textBox, europeCountry))
+    }
 
   return (
     <div className='h-fit w-full flex flex-col'>
@@ -594,22 +609,9 @@ const HomeScreen = () => {
             </div>
         </div>
 
-        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px]'>
-            <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col gap-[50px] md:py-[50px]'>
+       
 
-                <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-                    <p className='uppercase text-center md:text-left text-2xl font-semibold'>Vission</p>
-                    <p className='text-sm opacity-50 text-center md:text-left'>"At Overseas Education Consultancy, our vision is to be the guiding light for aspiring students, illuminating their path to world-class education. We strive to empower individuals with the knowledge and opportunities they need to unlock their full potential, enabling them to thrive in diverse academic landscapes across Canada, the UK, Australia, Switzerland, and Europe. Our commitment to excellence is unwavering, and we envision a future where every student's dream of international education becomes a reality."</p>
-                </div>
-
-                <div className='h-fit w-full  flex flex-col justify-center md:justify-start gap-[10px]'>
-                    <p className='uppercase text-center md:text-left text-2xl font-semibold'>Mission</p>
-                    <p className='text-sm opacity-50 text-center md:text-left'>"Our mission is to build bridges to a world-class education by offering unparalleled guidance and support for student visas to Canada, the UK, Australia, Switzerland, and Europe. With trust at the core of our services, we aim to simplify the complex journey of overseas education, providing a seamless experience. We are dedicated to nurturing dreams, fostering a diverse global community of learners, and ensuring that our students succeed in their academic pursuits. At Overseas Education Consultancy, we are more than just consultants; we are partners in your educational journey."</p>
-                </div>
-            </div>
-        </div>
-
-        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] '>
+        {/* <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] '>
             <div className='h-fit w-full max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center gap-[25px] md:gap-[150px] py-[50px]'>
                 <div className='h-fit w-full max-w-[400px]'>
                     <img alt='' src={pImg} className='h-[300px] w-fit object-contain' />
@@ -628,9 +630,96 @@ const HomeScreen = () => {
                     </ol>
                 </div>
             </div>
+        </div> */}
+
+        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px]'>
+            <div className='h-fit w-full max-w-[1300px] mx-auto md:flex md:justify-between md:px-[50px] xl:px-[100px] py-[50px] px-[15px] sm:px-[25px] bg-[#F6F6F6] rounded-[10px]'>
+                <div className='h-fit w-fit'>
+                    <img alt='' src={hero2} className='h-[300px] w-fit object-contain' />
+                </div>
+                <div className='h-fit my-auto gap-[10px] flex flex-col items-center'>
+                <p className='capitalize text-center md:text-left text-3xl font-semibold'>Contact us</p>
+                    <form className='w-full md:min-w-[400px] flex flex-col gap-[10px] py-[25px]'>
+                        <div className='h-[50px] w-full relative'>
+                            <input type='text' autoComplete={false} autoSave={false} required={true} value={name} onChange={(e) => setName(e.target.value)} placeholder='Username' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                                <BiUserCircle className='text-2xl'/>
+                            </div>
+                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
+
+                            </div>
+                        </div>
+                        <div className='h-[50px] w-full relative'>
+                            <input type='text' autoComplete={false} autoSave={false} required={true} value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                                <IoMailOutline className='text-2xl'/>
+                            </div>
+                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
+
+                            </div>
+                        </div>
+                        <div className='h-[50px] w-full relative'>
+                            <input type='text' autoComplete={false} autoSave={false} required={true} value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder='Phone Number' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                                <IoPhonePortraitOutline className='text-2xl'/>
+                            </div>
+                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
+
+                            </div>
+                        </div>
+                        <div className='h-[50px] w-full relative'>
+                            <select type='text' autoComplete={false} autoSave={false} required={true} value={country} onChange={(e) => setCountry(e.target.value)} placeholder='Country' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none bg-white'>
+                                <option className='capitalize' onClick={() => setCountry("canada")}>canada</option>
+                                <option className='capitalize' onClick={() => setCountry("australia")}>australia</option>
+                                <option className='capitalize' onClick={() => setCountry("UK")}>united Kingdom</option>
+                                <option className='capitalize' onClick={() => setCountry("USA")}>USA</option>
+                                <option className='capitalize' onClick={() => setCountry("europe")}>europe</option>
+                                <option className='capitalize' onClick={() => setCountry("switzerland")}>switzerland</option>
+                            </select> 
+                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                                <BiWorld className='text-2xl'/>
+                            </div>
+                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
+
+                            </div>
+                        </div>
+                        <div className={
+                            country === "europe"?
+                            'h-[50px] w-full relative':
+                            'h-[50px] w-full relative hidden'
+                        }>
+                            <input type='text' autoComplete={false} autoSave={false} required={true} value={europeCountry} onChange={(e) => setEuropeCountry(e.target.value)} placeholder='Country name' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                                <TbWorldUpload className='text-2xl'/>
+                            </div>
+                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
+
+                            </div>
+                        </div>
+                        <div className='h-[50px] w-full relative'>
+                            <input type='text' autoComplete={false} autoSave={false} required={true} value={textBox} onChange={(e) => setTextBox(e.target.value)} placeholder='Subject' className='h-full w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
+                            <div className='h-[50px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
+                                <MdOutlineSubject className='text-2xl'/>
+                            </div>
+                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
+
+                            </div>
+                        </div>
+                        <button type='button' onClick={() => submitHandler(name, email, phoneNumber, country, textBox, europeCountry)} className='h-[45px] w-fit mx-auto md:mx-0 px-[25px] flex gap-[10px] items-center justify-center bg-blue-500 text-white rounded-[10px] capitalize mt-[10px]'>
+                            <p>Submit</p>
+                            {
+                                loading?
+                                <img alt='' src='https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif' className='h-[24px] w-[24px] objec'  />:
+                                ""
+                            }
+                            
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px]'>
+        {/* <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px]'>
             <div className='h-fit w-full max-w-[1300px] mx-auto md:flex md:justify-between md:px-[50px] xl:px-[100px] py-[50px] px-[15px] sm:px-[25px] bg-[#F6F6F6] rounded-[10px]'>
                 <div className='h-fit w-fit'>
                     <img alt='' src={hero2} className='h-[300px] w-fit object-contain' />
@@ -680,7 +769,7 @@ const HomeScreen = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }

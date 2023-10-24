@@ -5,17 +5,15 @@ from ..serializers import *
 from rest_framework.response import Response
 
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
 def createRequest(request):
-    user = request.user
     data = request.data
     request = Request.objects.create(
-        user=user,
-        companyName=data['companyName'],
+        name=data['name'],
         email=data['email'],
         phoneNumber=data['phoneNumber'], 
-        category=data['category'],
-        subject=data['subject']
+        country=data['country'],
+        europeCountry=data['europeCountry'],
+        about=data['about']
     )
 
     serializer = RequestSerializer(request, many=False)

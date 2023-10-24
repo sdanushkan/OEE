@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { HiOutlineMenu } from 'react-icons/hi'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 // import { useInView } from 'react-intersection-observer'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../actions/userActions'
 import logo from '../assets/SRKlogo.png'
 import logo1 from '../assets/logo1.png'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { animateScroll } from 'react-scroll';
 
 const Header = () => {
     const userLogin = useSelector(state => state.userLogin)
@@ -16,6 +17,7 @@ const Header = () => {
 
     const location = useLocation()
     const dispatch = useDispatch()
+    const history = useNavigate()
 
     const navbarHandler = () =>{
         setNavbar(!navbar)
@@ -23,6 +25,22 @@ const Header = () => {
     
     const logoutHandler = () => {
         dispatch(logout())
+    }
+
+    const contactUS = () => {
+        if(location.pathname == "/"){
+            animateScroll.scrollToBottom({
+                duration: 500,
+                smooth: true,
+            })
+        } else {
+            history('/')
+            animateScroll.scrollToBottom({
+                duration: 500,
+                smooth: true,
+            })
+        }
+        
     }
 
   return (
@@ -35,8 +53,8 @@ const Header = () => {
                 <div className='hidden md:flex items-center gap-[25px]'>
                     <p className='uppercase text-sm font-medium'>Home</p>
                     <p className='uppercase text-sm font-medium'>Services</p>
-                    <p className='uppercase text-sm font-medium'>about us</p>
-                    <p className='uppercase text-sm font-medium'>Contact us</p>
+                    <Link to={'/about'} className='uppercase text-sm font-medium'>about us</Link>
+                    <button onClick={contactUS} className='uppercase text-sm font-medium'>Contact us</button>
                 </div>
                 <button onClick={navbarHandler} className='md:hidden'>
                     <AiOutlineMenu/>

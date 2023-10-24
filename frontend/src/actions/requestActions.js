@@ -5,31 +5,28 @@ import {
  } from '../constants/requestConstants'
 import axios from 'axios'
 
-export const createRequest = (companyName, category, email, phoneNumber, about) => async (dispatch, getState) => {
+export const createRequest = (name, email, phoneNumber, country, textBox, europeCountry) => async (dispatch) => {
     try {
         dispatch({
             type: REQUEST_CREATE_REQUEST
         })
 
-        const {
-            userLogin: { userInfo },
-        } = getState()
 
         const config = {
             headers: {
                 'Content-type': 'application/json',
-                Authorization: `Bearer ${userInfo.access}`
             }
         }
 
         const { data } = await axios.post(
             `/api/addRequest/`,
             {
-                'companyName':companyName,
-                'category' : category,
+                'name':name,
+                'phoneNumber' : phoneNumber,
                 'email': email,
-                'phoneNumber': phoneNumber,
-                'subject':about
+                'country': country,
+                'europeCountry':europeCountry,
+                'about':textBox 
             },
             config
         )
