@@ -55,8 +55,7 @@ const Header = () => {
                     <img alt='' src={logo1} className='h-[75px] w-fit object-contain' />
                 </Link>
                 <div className='hidden md:flex items-center gap-[25px]'>
-                    <p className='uppercase text-sm font-medium'>Home</p>
-                    <p className='uppercase text-sm font-medium'>Services</p>
+                    <Link to={'/'} className='uppercase text-sm font-medium'>Home</Link>
                     <Link to={'/about'} className='uppercase text-sm font-medium'>about us</Link>
                     <button onClick={contactUS} className='uppercase text-sm font-medium'>Contact us</button>
                 </div>
@@ -72,9 +71,6 @@ const Header = () => {
                     <Link to={'/'} onClick={navbarHandler} className='h-[40px] w-full flex items-center justify-center'>
                         <p className='opacity-50 capitalize text-center'>Home</p>
                     </Link>
-                    <button className='h-[40px] w-full flex items-center justify-center'>
-                        <p className='opacity-50 capitalize text-center'>Services</p>
-                    </button>
                     <button onClick={() => {
                         navbarHandler();
                         contactUS();

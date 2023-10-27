@@ -136,8 +136,20 @@ const Unitedstates = () => {
                 <p className='text-base font-semibold text-left'>Benefits of study UK?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
-                <p className='text-xs text-left'>In UK, there is a high level of life. The same liberties and rights respect for human rights, equality, diversity, and a stable, peaceful society—that safeguard all Canadians are also advantageous to international students. </p>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[35px]'>
+                <ol className='list-disc md:px-[25px]'>
+                  <li className='text-left'>High-Quality Education: UK is known for its world-class education system and globally recognized institutions.</li>
+                  <li className='text-left'>Diverse and Inclusive Society: UK is welcoming and multicultural, making it an excellent place for international students to adapt and thrive.</li>
+                  <li className='text-left'> Post-Graduate Work Opportunities: UK provides opportunities for international students to gain valuable work experience through post-graduate work permits.</li>
+                  <li className='text-left'> Safety and Quality of Life: UK is consistently ranked as one of the safest countries in the world, offering an excellent quality of life.</li>
+                  <li className='text-left'>Research Opportunities: Canadian universities are at the forefront of research and innovation, providing students with the chance to be part of cutting-edge projects.</li>
+                  <li className='text-left'>Natural Beauty: UK's stunning landscapes and outdoor activities make it an ideal destination for those who enjoy the outdoors.</li>
+                  <li className='text-left'>Language Learning: Studying in UK allows you to improve your language skills, with English and French as the official languages.</li>
+                  <li className='text-left'> Healthcare Benefits: International students often have access to UK's healthcare system, which is highly regarded.</li>
+                  <li className='text-left'> Immigration Opportunities: UK offers various pathways for international students to become permanent residents or citizens.</li>
+                  <li className='text-left'>Networking and Cultural Experiences: Studying in UK enables you to build a global network and experience diverse cultures.</li>
+                  <li className='text-left'>Keep in mind that specific benefits can vary depending on the institution and program you choose, so it's essential to research and select the best fit for your educational and career goals.</li>
+                </ol>
               </div>
             </button>
             <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[35px]'>
