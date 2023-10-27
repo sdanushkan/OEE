@@ -43,13 +43,13 @@ const Unitedstates = () => {
                         <img alt='' src={"https://a.cdn-hotels.com/gdcs/production72/d1850/0bb0c864-bae4-42fd-9df9-dee0d5542461.jpg?impolicy=fcrop&w=800&h=533&q=medium"} className='h-[350px] w-full object-cover' />
                         </SwiperSlide>
                         <SwiperSlide>
-                        <img alt='' src={"https://royalstockphoto.s3.amazonaws.com/wp-content/uploads/2017/10/03050159/x060x-Toronto-City-Hall-Night-Lights-Downtown-Ontario-Canada.jpg"} className='h-[350px] w-full object-cover' />
+                        <img alt='' src={"https://royalstockphoto.s3.amazonaws.com/wp-content/uploads/2017/10/03050159/x060x-Toronto-City-Hall-Night-Lights-Downtown-Ontario-UK.jpg"} className='h-[350px] w-full object-cover' />
                         </SwiperSlide>
                         <SwiperSlide>
                         <img alt='' src={"https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.coloradoexpression.com/content/uploads/2022/08/u/b/screen-shot-2022-08-23-at-103439-am-1024x470.png"} className='h-[350px] w-full object-cover' />
                         </SwiperSlide>
                         <SwiperSlide>
-                        <img alt='' src={"https://cdn.sixtyandme.com/wp-content/uploads/2022/04/Sixty-and-Me_Exploring-5-of-Canadas-Most-Beautiful-Cities.jpg"} className='h-[350px] w-full object-cover' />
+                        <img alt='' src={"https://cdn.sixtyandme.com/wp-content/uploads/2022/04/Sixty-and-Me_Exploring-5-of-UKs-Most-Beautiful-Cities.jpg"} className='h-[350px] w-full object-cover' />
                         </SwiperSlide>
                         
                     </Swiper>
@@ -68,8 +68,7 @@ const Unitedstates = () => {
               {/* <p className='capitalize text-center md:text-left text-2xl font-semibold'>Switzerland: Elevate Your Education, Enrich Your Life</p> */}
               <div className='h-fit w-full flex flex-col gap-[15px]'>
             
-              <p className='text-xl opacity-75 text-left'>Welcome to our website, your one-stop destination for discovering why the United Kingdom is the ultimate choice for international students. Get ready to explore a world of possibilities.
-</p>
+              <p className='text-xl opacity-75 text-left'>Welcome to our website, your one-stop destination for discovering why the United Kingdom is the ultimate choice for international students. Get ready to explore a world of possibilities.</p>
               </div>
 
               <ol className='list-decimal px-[50px]'>
@@ -96,59 +95,84 @@ const Unitedstates = () => {
         </div>
       </div> */}
 
-      <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] bg-[#f6f6f6]'>
+<div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] bg-[#f6f6f6]'>
         <div className='h-fitt w-full max-w-[1300px] mx-auto flex flex-col py-[25px] gap-[10px]'>
           <p className='text-3xl text-blue-500 text-center font-semibold pb-[10px]'>FAQs</p>
-
-            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
+{/* 
+            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[35px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
-                <p className='text-base font-semibold text-left'>Which consultant is best for UK immigration?</p>
+                <p className='text-base font-semibold text-left'>Which is the best UK Study visa consultant in Sri Lanka ?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
               <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
-                <p className='text-xs text-left'>GIEC GLOBAL Sri Lanka is specialises in offering visas for skilled workers from the UK. Our specialists can help you with the application procedure for the following visa categories in addition to a UK skilled worker visa: Tier 1 visa for UK entrepreneurs. Visas for innovators and startups.</p>
+                <p className='text-xs text-left'>We are the best UK student visa consultants in Sri Lanka.  We are the most trusted UK Student Visa Consultants Sri Lanka. If you want to peruse your study then we are the best UK Education Agents in Sri Lanka</p>
               </div>
-            </button>
-            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
+            </button> */}
+            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[35px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
-                <p className='text-base font-semibold text-left'>  What are the requirements to migrate to UK? </p>
+                <p className='text-base font-semibold text-left'>How can I get student visa for UK from Sri Lanka?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
-                <ol className='list-disc'>
-                  <li className='text-left'>The English Language Proficiency Test is required of you. IELTS and TOEFL are mostly included in this.</li>
-                  <li className='text-left'>You should be a citizen of a nation that is not a part of the EEA, or European Economic Area.</li>
-                  <li className='text-left'>To register in a college or apply for a job in the UK, you need be in possession of the necessary documentation, including work experience certificates and other types.</li>
-                  <li className='text-left'>For the first years of your stay in the UK while you are on a student or work visa, you should have the necessary financial resources.</li>
-                  <li className='text-left'>Additional documentation demonstrating your eligibility for the necessary visa, such as character and health certifications, are required.</li>
-          
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[35px]'>
+                <ol className='list-disc md:px-[25px]'>
+                  <li className='text-left'>Receive an Offer from a UK Institution: You must first be accepted by a recognized educational institution in the UK. Once accepted, you'll receive a Confirmation of Acceptance for Studies (CAS) from the institution.</li>
+                  <li className='text-left'>Check Visa Eligibility: Ensure you meet the eligibility criteria for a UK student visa, which may include proof of funds, English language proficiency, and meeting health requirements.</li>
+                  <li className='text-left'>English Language Proficiency: If required, take an English language test like IELTS, TOEFL, or a UKVI-approved English language test.</li>
+                  <li className='text-left'>Create an Online Account: Visit the official UK government's visa application website and create an account to start your application.</li>
+                  <li className='text-left'>Complete the Visa Application: Fill out the online visa application form and pay the visa application fee. You will need to provide your CAS number during this process.</li>
+                  <li className='text-left'>Biometric Appointment: Book and attend a biometric appointment at a local Application Support Centre (ASC) to provide your fingerprints and photograph.</li>
+                  <li className='text-left'>Required Documents: Gather the necessary documents, which typically include your CAS, proof of funds, passport, and passport-sized photographs. Check the specific document requirements on the official website.</li>
+                  <li className='text-left'>Tuberculosis (TB) Test: Depending on your home country, you might need to undergo a TB test. Check if this is a requirement for Sri Lankan citizens.</li>
+                  <li className='text-left'>Healthcare Surcharge: Pay the Immigration Healthcare Surcharge as part of your application. This provides access to the UK's National Health Service (NHS).</li>
+                  <li className='text-left'> Attend an Interview: In some cases, you may be required to attend an interview at your local UK visa application center.</li>
+                  <li className='text-left'>Submit Your Application: Submit your visa application online and pay the fee.</li>
+                  <li className='text-left'> Wait for a Decision: The UK Visa and Immigration office will process your application, and you will be notified of the decision. Processing times may vary.</li>
+                  <li className='text-left'> Receive Your Visa: If your application is approved, you will receive a vignette sticker in your passport that allows you to enter the UK. Once in the UK, you will collect your full Biometric Residence Permit (BRP) from a local Post Office.</li>
                 </ol>
               </div>
             </button>
-            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
+            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[35px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
-                <p className='text-base font-semibold text-left'>  Why you should migrate to UK?  </p>
+                <p className='text-base font-semibold text-left'>Benefits of study UK?</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
-                <ol className='list-decimal md:px-[25px]'>
-                  <li className='text-left'>Robust economy and well-established businesses</li>
-                  <li className='text-left'>There is a huge need for competent workers to fuel its modern economy.</li>
-                  <li className='text-left'>Thriving, long-established Indian community superb, cost-free treatment provided by the NHS</li>
-                  <li className='text-left'>Has some of the top universities in the world.</li>
-                  <li className='text-left'>Strong passport to ease international travel</li>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[10px]'>
+                <p className='text-xs text-left'>In UK, there is a high level of life. The same liberties and rights respect for human rights, equality, diversity, and a stable, peaceful society—that safeguard all Canadians are also advantageous to international students. </p>
+              </div>
+            </button>
+            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[35px]'>
+              <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
+                <p className='text-base font-semibold text-left'>What are the requirements for UK Study Visa?</p>
+                <IoIosArrowDown className='text-lg'/>
+              </div>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[35px]'>
+                <ol className='list-disc md:px-[25px]'>
+                  <li className='text-left'>Acceptance Letter: You must have a Letter of Acceptance from a designated learning institution in UK.</li>
+                  <li className='text-left'> Sufficient Finances: You need to demonstrate that you have enough money to cover tuition fees, living expenses, and return transportation. This can be shown through bank statements, scholarship offers, or a combination of funding sources.</li>
+                  <li className='text-left'>Clean Criminal Record: You may be required to provide a police clearance certificate to prove you have no criminal record.</li>
+                  <li className='text-left'> Medical Exam: In some cases, you may need to undergo a medical examination to demonstrate that you are in good health.</li>
+                  <li className='text-left'>Intent to Return: You should convince the immigration officer that you will leave UK when your study permit expires.</li>
+                  <li className='text-left'>Passport: You need a valid passport.</li>
+                  <li className='text-left'>Photographs: Recent passport-sized photographs that meet the UK Visa Photo Requirements.</li>
+                  <li className='text-left'>Biometrics: In some cases, you may need to provide biometrics (fingerprints and photograph).</li>
+                  <li className='text-left'> Application Form: You'll need to complete the appropriate application forms.</li>
+                  <li className='text-left'> Language Proficiency: Depending on your program, you may need to prove your language proficiency in English or French through language tests like IELTS or TOEFL.</li>
+                  <li className='text-left'>Statement of Purpose: A statement explaining your study plans in UK.</li>
+                  <li className='text-left'>Visa Processing Fee: You'll need to pay the required visa processing fee.</li>
                 </ol>
               </div>
             </button>
-            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[25px]'>
+            <button className='h-[100px] md:h-[50px] w-full overflow-hidden focus:overflow-hidden bg-white  focus:h-fit duration-200 px-[15px] md:px-[35px]'>
               <div className='h-[100px] md:h-[50px]  w-full flex items-center justify-between'>
-                <p className='text-base font-semibold text-left'> What IELTS score is required for UK immigration?</p>
+                <p className='text-base font-semibold text-left'>What are the required IELTS and TOEFL scores for a student visa in the UK</p>
                 <IoIosArrowDown className='text-lg'/>
               </div>
-              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[25px]'>
-                <p className='text-xs text-left'>
-                The university and subject you want to take will determine your IELTS score for the UK. Most UK colleges require a minimum IELTS score of 6.0 to 6.5, however selective institutions may demand a significantly higher score of 7 or above.
-                </p>
+              <div className='bg-blue-500 text-white py-[15px] md:py-[25px] px-[15px] md:px-[35px]'>
+                <ol className='list-disc md:px-[25px]'>
+                  <li className='text-left'> *IELTS*: For most undergraduate and postgraduate programs, a common requirement is an IELTS score of at least 6.0 to 7.0 in each band (listening, reading, writing, and speaking). However, the exact score may vary based on the university and the course.</li>
+                  <li className='text-left'>*TOEFL*: If you're taking the TOEFL, many institutions will often require a score of around 80 to 100 on the internet-based TOEFL (iBT). Some institutions may accept a paper-based TOEFL (PBT) score, which typically ranges from 550 to 600.</li>
+                  <li className='text-left'>Keep in mind that requirements may have changed since my last update, and they can vary between universities and courses. Always check the specific English language proficiency requirements set by the institution you plan to apply to. It's a good idea to consult the university's official website or contact their admissions office for the most up-to-date information on language proficiency requirements.</li>
+                </ol>
               </div>
             </button>
         </div>
