@@ -77,7 +77,7 @@ const ResetPasswordScreen = () => {
                     <div className='h-[50px] w-full'>
                         {
                             success?
-                            <a href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwix96H2qcuAAxVRxDgGHXyQDZEQFnoECA4QAQ&url=https%3A%2F%2Fmail.google.com%2Fmail%2F&usg=AOvVaw1LdBdmrwYVrMn4NzKd8iI_&opi=89978449' type='submit' placeholder='Password' className='h-full w-full text-white px-[65px] bg-blue-500 duration-200 rounded-[5px] outline-none flex items-center justify-center gap-[10px]'>
+                            <a href='https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwix96H2qcuAAxVRxDgGHXyQDZEQFnOEEA4QAQ&url=https%3A%2F%2Fmail.google.com%2Fmail%2F&usg=AOvVaw1LdBdmrwYVrMn4NzKd8iI_&opi=89978449' type='submit' placeholder='Password' className='h-full w-full text-white px-[65px] bg-blue-500 duration-200 rounded-[5px] outline-none flex items-center justify-center gap-[10px]'>
                                 <p>Open mail</p>
                             </a>:
                             <button type='submit' placeholder='Password' className='h-full w-full text-white px-[65px] bg-blue-500 duration-200 rounded-[5px] outline-none flex items-center justify-center gap-[10px]'>

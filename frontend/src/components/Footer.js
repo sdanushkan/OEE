@@ -10,7 +10,7 @@ const Footer = () => {
 
         <div className='h-fit w-full max-w-[1300px] mx-auto flex flex-col md:flex-row gap-[25px] md:gap-[50px]'>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
-                <p className='text-center md:text-left text-xl font-semibold'>OEC</p>
+                <p className='text-center md:text-left text-xl font-semibold'>OEE</p>
                 <div className='flex flex-col gap-[10px]'>
                     <p className='text-center md:text-left capitalize'>— Building bridges to a world-class education—</p>
                     <p className='text-center md:text-left text-sm opacity-50'>

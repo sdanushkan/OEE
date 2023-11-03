@@ -49,7 +49,7 @@ const ResetPasswordConfirmationScreen = () => {
                     'h-fit w-full md:w-[300px] lg:w-[400px] flex flex-col gap-[15px] duration-500 -mb-[100px] opacity-0'
                 }>
                     <Link to={'/'} className='h-[50px] w-full flex items-center'>
-                        <p className='text-2xl font-Orbitron font-medium text-blue-500'>OEC</p>
+                        <p className='text-2xl font-Orbitron font-medium text-blue-500'>OEE</p>
                     </Link>                   
                    
                     <div className='h-fit w-full flex flex-col gap-[10px]'>
