@@ -13,12 +13,18 @@ const Footer = () => {
                 <p className='text-center md:text-left text-xl font-semibold'>OEE</p>
                 <div className='flex flex-col gap-[10px]'>
                     <p className='text-center md:text-left capitalize'>— Building bridges to a world-class education—</p>
-                    <p className='text-center md:text-left text-sm opacity-50'>
-                        070-1999955, 071-8995555
-                    </p>
-                    <p className='text-center md:text-left text-sm opacity-50'>
-                        N0 162c, New kalmunai Road, Kallady, Batticaloa
-                    </p>
+                    <ol className='list-disc px-[25px]'>
+                        <li className='text-center md:text-left text-base opacity-50'>
+                            info@oee.lk
+                        </li>
+                        <li className='text-center md:text-left text-sm opacity-50'>
+                            070-1999955, 071-8995555
+                        </li>
+                        
+                        <li className='text-center md:text-left text-sm opacity-50'>
+                            N0 162c, New kalmunai Road, Kallady, Batticaloa
+                        </li>
+                    </ol>
                 </div>
             </div>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>

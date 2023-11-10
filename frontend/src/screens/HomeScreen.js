@@ -48,6 +48,7 @@ const HomeScreen = () => {
     const [textBox, setTextBox] = useState('')
 
     const submitHandler = (name, email, phoneNumber, country, textBox, europeCountry) => {
+
         dispatch(createRequest(name, email, phoneNumber, country, textBox, europeCountry))
     }
 
@@ -633,9 +634,9 @@ const HomeScreen = () => {
         </div> */}
 
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px]'>
-            <div className='h-fit w-full max-w-[1300px] mx-auto md:flex md:justify-between md:px-[50px] xl:px-[100px] py-[50px] px-[15px] sm:px-[25px] bg-[#F6F6F6] rounded-[10px]'>
+            <div className='h-fit w-full max-w-[1300px] mx-auto md:flex md:justify-around md:items-center md:px-[50px] xl:px-[100px] py-[50px] px-[15px] sm:px-[25px] bg-[#F6F6F6] rounded-[10px]'>
                 <div className='h-fit w-fit'>
-                    <img alt='' src={hero2} className='h-[300px] w-fit object-contain' />
+                    <img alt='' src={hero2} className='h-[300px] md:h-[400px] lg:h-[450px] w-fit object-contain' />
                 </div>
                 <div className='h-fit my-auto gap-[10px] flex flex-col items-center'>
                 <p className='capitalize text-center md:text-left text-3xl font-semibold'>Contact us</p>
@@ -697,15 +698,19 @@ const HomeScreen = () => {
                             </div>
                         </div>
                         <div className='h-[100px] w-full relative flex items-start'>
-                            <input type='text' autoComplete={false} autoSave={false} required={true} value={textBox} onChange={(e) => setTextBox(e.target.value)} placeholder='Subject' className='h-[100px] w-full px-[65px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none'></input>
-                            <div className='h-[100px] w-[50px] absolute left-0 top-0 bottom-0 flex items-center justify-center'>
-                                <MdOutlineSubject className='text-2xl'/>
-                            </div>
-                            <div className='h-[30px] w-[1px] bg-black opacity-10 absolute top-1/2 left-[50px] transform -translate-y-1/2'>
-
-                            </div>
+                            <textarea type='text' autoComplete={false} autoSave={false} required={true} value={textBox} onChange={(e) => setTextBox(e.target.value)} placeholder='Subject' className='h-[100px] w-full px-[15px] border-[1px] border-black border-opacity-5 focus:border-opacity-20 duration-200 rounded-[5px] outline-none py-[10px] capitalize'></textarea>
+                    
                         </div>
-                        <button type='button' onClick={() => submitHandler(name, email, phoneNumber, country, textBox, europeCountry)} className='h-[45px] w-fit mx-auto md:mx-0 px-[25px] flex gap-[10px] items-center justify-center bg-blue-500 text-white rounded-[10px] capitalize mt-[10px]'>
+                        <button type='button' disabled={
+                            name =="" || email=="" || phoneNumber=="" || country=="" || textBox=="" ?
+                            true:
+                            false
+                        } onClick={() => submitHandler(name, email, phoneNumber, country, textBox, europeCountry)} className={
+                        name =="" || email=="" || phoneNumber=="" || country=="" || textBox=="" ?
+                        'h-[45px] w-fit mx-auto md:mx-0 px-[25px] flex gap-[10px] items-center justify-center bg-blue-500/50 text-white rounded-[10px] capitalize mt-[10px]':
+                        'h-[45px] w-fit mx-auto md:mx-0 px-[25px] flex gap-[10px] items-center justify-center bg-blue-500 text-white rounded-[10px] capitalize mt-[10px]'
+                        }
+                        >
                             <p>Submit</p>
                             {
                                 loading?
