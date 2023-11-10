@@ -212,8 +212,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
     'https://srk-production.up.railway.app',
-    'https://srk-elite.com',
-    'https://www.srk-elite.com',
+    'https://oee.lk',
+    'https://www.oee.lk',
     'http://localhost',
     "https://web-production-8393.up.railway.app/"
 ]
