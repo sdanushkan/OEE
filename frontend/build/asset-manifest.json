@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.562463bd.css",
-    "main.js": "/static/js/main.a4997533.js",
+    "main.js": "/static/js/main.fd5070e5.js",
     "static/media/herom.png": "/static/media/herom.b438a4f1e2c2f4e218e7.png",
+    "static/media/SRKlogo.png": "/static/media/SRKlogo.12a84556ef3ba5057484.png",
+    "static/media/logo1.png": "/static/media/logo1.12a84556ef3ba5057484.png",
     "static/media/hero2.png": "/static/media/hero2.59149136d7337bce90b9.png",
     "static/media/we.png": "/static/media/we.2c108254042e4583f851.png",
     "static/media/cu.png": "/static/media/cu.0108d9498a755dd5f168.png",
     "static/media/ProssessImg.jpg": "/static/media/ProssessImg.eb370471f66c81a0855d.jpg",
     "static/media/hero1.png": "/static/media/hero1.637940fee5afca94e13d.png",
-    "static/media/SRKlogo.png": "/static/media/SRKlogo.88b1c82e147a45d55895.png",
-    "static/media/logo1.png": "/static/media/logo1.88b1c82e147a45d55895.png",
     "static/media/RoundEllipse.png": "/static/media/RoundEllipse.8987a3b776644b041e73.png",
     "index.html": "/index.html",
     "main.562463bd.css.map": "/static/css/main.562463bd.css.map",
-    "main.a4997533.js.map": "/static/js/main.a4997533.js.map"
+    "main.fd5070e5.js.map": "/static/js/main.fd5070e5.js.map"
   },
   "entrypoints": [
     "static/css/main.562463bd.css",
-    "static/js/main.a4997533.js"
+    "static/js/main.fd5070e5.js"
   ]
 }
