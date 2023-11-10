@@ -33,7 +33,7 @@ const App = () => {
         <Route path='/switzerland' element={<Switzerland/>} />
         <Route path='/Europe' element={<Europe/>} />
 
-        <Route path='/login' element={<LoginScreen/>}/>
+        {/* <Route path='/login' element={<LoginScreen/>}/>
         <Route path='/register' element={<RegisterScreen/>}/>
         <Route path='/activate/:uid/:token' element={<ActivateScreen/>}/>
         <Route path='/resendActivationLink' element={<ResendActivationEmail/>}/>
@@ -41,7 +41,7 @@ const App = () => {
         <Route path='/resetPassword/:uid/:token' element={<ResetPasswordConfirmationScreen/>}/>
         <Route element={<PrivateRoute/>}>
           <Route path='/action' element={<ActionScreen/>}/>
-        </Route>
+        </Route> */}
       </Routes>
       <Footer/>
     </Router>
