@@ -1,12 +1,14 @@
 import React from 'react'
-import logo1 from '../assets/logo1.png'
+import pr from '../assets/ProssessImg.jpg'
 import { Link, useLocation } from 'react-router-dom'
 import { BsFacebook, BsWhatsapp } from 'react-icons/bs'
 import ReactWhatsapp from 'react-whatsapp';
 
 const Footer = () => {
   return (
-    <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px] bg-blue-500 text-white flex mt-[50px]'>
+    <div className='h-fit w-full bg-blue-500 text-white flex flex-col mt-[50px]'>
+
+        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px] bg-blue-500 text-white flex flex-col mt-[50px]'>
 
         <div className='h-fit w-full max-w-[1300px] mx-auto flex flex-col md:flex-row gap-[25px] md:gap-[50px]'>
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
@@ -18,7 +20,7 @@ const Footer = () => {
                             info@oee.lk
                         </li>
                         <li className='text-center md:text-left text-sm opacity-50'>
-                            070-1999955, 071-8995555
+                            070-1999955, 071-8995555, 076-5999965
                         </li>
                         
                         <li className='text-center md:text-left text-sm opacity-50'>
@@ -46,6 +48,11 @@ const Footer = () => {
                 
                 </div>
             </div>
+        </div>
+        </div>
+        <div className='w-full h-fit bg-black flex items-center justify-between px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[25px]'>
+            <div className='h-[3px] md:h-[5px] w-[80%] bg-white'></div>
+            <img src={pr} alt='' className='w-fit h-fit md:h-[50px] object-cover md:object-contain' />
         </div>
     </div>
   )
