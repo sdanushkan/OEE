@@ -50,9 +50,10 @@ const Footer = () => {
             </div>
         </div>
         </div>
-        <div className='w-full h-fit bg-black flex items-center justify-between px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[25px]'>
-            <div className='h-[3px] md:h-[5px] w-[80%] bg-white'></div>
-            <img src={pr} alt='' className='w-fit h-fit md:h-[50px] object-cover md:object-contain' />
+        <div className='w-full h-fit bg-black flex items-start justify-between px-[15px] sm:px-[25px] gap-[10px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[15px]'>
+            <div className='h-[3px] md:h-[5px] w-full bg-white'></div>
+            <img src={pr} alt='' className='md:w-fit h-[40px] md:h-[40px] object-cover md:object-contain' />
+            <div className='h-[3px] md:h-[5px] w-[25px] md:w-[100px] bg-white mt-auto'></div>
         </div>
     </div>
   )

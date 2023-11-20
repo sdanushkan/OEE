@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bb49de8.css",
-    "main.js": "/static/js/main.599779fc.js",
+    "main.css": "/static/css/main.4fd7d91b.css",
+    "main.js": "/static/js/main.37ba6ac0.js",
     "static/media/herom.png": "/static/media/herom.b438a4f1e2c2f4e218e7.png",
     "static/media/SRKlogo.png": "/static/media/SRKlogo.12a84556ef3ba5057484.png",
     "static/media/logo1.png": "/static/media/logo1.12a84556ef3ba5057484.png",
@@ -11,11 +11,11 @@
     "static/media/hero1.png": "/static/media/hero1.637940fee5afca94e13d.png",
     "static/media/RoundEllipse.png": "/static/media/RoundEllipse.8987a3b776644b041e73.png",
     "index.html": "/index.html",
-    "main.0bb49de8.css.map": "/static/css/main.0bb49de8.css.map",
-    "main.599779fc.js.map": "/static/js/main.599779fc.js.map"
+    "main.4fd7d91b.css.map": "/static/css/main.4fd7d91b.css.map",
+    "main.37ba6ac0.js.map": "/static/js/main.37ba6ac0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bb49de8.css",
-    "static/js/main.599779fc.js"
+    "static/css/main.4fd7d91b.css",
+    "static/js/main.37ba6ac0.js"
   ]
 }
