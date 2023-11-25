@@ -122,9 +122,9 @@ const HomeScreen = () => {
         </div> */}
 
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px]'>
-            <div className='h-fit w-full max-w-[1024px] mx-auto flex flex-col md:flex-row'>
-                <div className='h-[300px] w-full md:w-1/2 flex items-center justify-center '>
-                    <img alt='' src={hero1} className='max-h-[300px] h-full  w-fit object-contain' />
+            <div className='h-fit w-full max-w-[1024px] gap-[25px] md:gap-0 mx-auto flex flex-col md:flex-row md:items-center'>
+                <div className='h-fit md:h-[400px] w-full md:w-1/2 flex items-center justify-center '>
+                    <img alt='' src={hero1} className='md:max-h-[400px] h-full  w-fit object-contain' />
                 </div>
                 <div className='h-[300px] w-full md:w-1/2 flex flex-col justify-start gap-[25px]'>
                 <p className='text-center md:text-left font-semibold text-2xl capitalize'>your trusted partner for overseas education Experience</p>

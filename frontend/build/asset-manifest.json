@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4fd7d91b.css",
-    "main.js": "/static/js/main.37ba6ac0.js",
+    "main.css": "/static/css/main.e39a3575.css",
+    "main.js": "/static/js/main.142caffb.js",
+    "static/media/hero1.png": "/static/media/hero1.7cc831535f3bfbe7a5d0.png",
     "static/media/herom.png": "/static/media/herom.b438a4f1e2c2f4e218e7.png",
     "static/media/SRKlogo.png": "/static/media/SRKlogo.12a84556ef3ba5057484.png",
     "static/media/logo1.png": "/static/media/logo1.12a84556ef3ba5057484.png",
     "static/media/hero2.png": "/static/media/hero2.59149136d7337bce90b9.png",
     "static/media/we.png": "/static/media/we.2c108254042e4583f851.png",
     "static/media/cu.png": "/static/media/cu.0108d9498a755dd5f168.png",
-    "static/media/hero1.png": "/static/media/hero1.637940fee5afca94e13d.png",
     "static/media/RoundEllipse.png": "/static/media/RoundEllipse.8987a3b776644b041e73.png",
     "index.html": "/index.html",
-    "main.4fd7d91b.css.map": "/static/css/main.4fd7d91b.css.map",
-    "main.37ba6ac0.js.map": "/static/js/main.37ba6ac0.js.map"
+    "main.e39a3575.css.map": "/static/css/main.e39a3575.css.map",
+    "main.142caffb.js.map": "/static/js/main.142caffb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fd7d91b.css",
-    "static/js/main.37ba6ac0.js"
+    "static/css/main.e39a3575.css",
+    "static/js/main.142caffb.js"
   ]
 }
