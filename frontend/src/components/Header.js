@@ -8,12 +8,16 @@ import logo from '../assets/SRKlogo.png'
 import logo1 from '../assets/logo1.png'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { animateScroll } from 'react-scroll';
+import herom from '../assets/herom.png'
+import { BsFilePost } from "react-icons/bs";
+import { GoPlus } from "react-icons/go";
 
 const Header = () => {
     const userLogin = useSelector(state => state.userLogin)
     const { error, loading, userInfo } = userLogin
 
     const [navbar, setNavbar] = useState(false)
+    const [poster, setPoster] = useState(false)
 
     const location = useLocation()
     const dispatch = useDispatch()
@@ -21,6 +25,9 @@ const Header = () => {
 
     const navbarHandler = () =>{
         setNavbar(!navbar)
+    }
+    const posterHandler = () =>{
+        setPoster(!poster)
     }
     
     const logoutHandler = () => {
@@ -49,6 +56,23 @@ const Header = () => {
         "h-fit w-full z-50 bg-white fixed top-0":
         "h-fit w-full z-50 relative top-0 bg-white"
     }>
+        <button onClick={posterHandler} className='fixed bottom-[25px] right-[25px] h-[50px] w-[50px] bg-[#CA4653] rounded-full z-[50] flex items-center justify-center text-white text-lg'>{
+            poster?
+            <GoPlus className='rotate-45 text-2xl'/>:
+            <BsFilePost />
+        }</button>
+        <div className={
+            poster? 
+            'fixed h-screen w-screen bg-black/50 z-40 flex items-center':
+            'fixed hidden h-screen w-screen bg-black/50 z-40 items-center'
+        }>
+
+        <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px]'>
+            <div className='h-fit w-full max-w-[1300px] mx-auto md:flex md:justify-around md:items-center md:px-[50px] xl:px-[100px] py-[50px] px-[15px] sm:px-[25px] rounded-[10px]'>
+                <img src={herom} alt='' className='w-full md:w-fit h-fit md:h-[500px] object-contain'/>
+            </div>
+        </div>
+        </div>
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px]'>
             <div className='h-[100px] w-full max-w-[1300px] mx-auto flex items-center justify-between'>
                 <Link to={'/'} className='h-fit w-fit text-xl font-semibold tracking-wider uppercase opacity-75'>

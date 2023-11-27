@@ -633,6 +633,7 @@ const HomeScreen = () => {
             </div>
         </div> */}
 
+
         <div className='h-fit w-full px-[15px] sm:px-[25px] md:px-[50px] lg:px-[75px] xl:px-[100px] py-[50px]'>
             <div className='h-fit w-full max-w-[1300px] mx-auto md:flex md:justify-around md:items-center md:px-[50px] xl:px-[100px] py-[50px] px-[15px] sm:px-[25px] bg-[#F6F6F6] rounded-[10px]'>
                 <div className='h-fit w-fit'>
