@@ -30,8 +30,6 @@ import { createRequest } from '../actions/requestActions'
 import { useDispatch, useSelector } from 'react-redux'
 
 
-
-
 const HomeScreen = () => {
     const { ref:heroText, inView:isHeroText } = useInView({triggerOnce:true});
 
