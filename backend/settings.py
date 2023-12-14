@@ -31,8 +31,7 @@ SECRET_KEY = 'django-insecure-m%^3a)*le!=vbzv$25s_xmqw+#ku-i)7ymjvorep1u3n3)0l(o
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["web-production-9834.up.railway.app", "web-production-233ed.up.railway.app", "oee.lk", "www.oee.lk"]
-
+ALLOWED_HOSTS = ["web-production-9834.up.railway.app", "oee.lk", "www.oee.lk"]
 
 # Application definitio
 
