@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-m%^3a)*le!=vbzv$25s_xmqw+#ku-i)7ymjvorep1u3n3)0l(o
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["web-production-9834.up.railway.app", "oee.lk", "www.oee.lk"]
+ALLOWED_HOSTS = ["web-production-9834.up.railway.app","web-production-109d.up.railway.app", "oee.lk", "www.oee.lk"]
 
 # Application definitio
 
@@ -210,7 +210,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://srk-production.up.railway.app',
+    'https://web-production-109d.up.railway.app',
     'https://oee.lk',
     'https://www.oee.lk',
     'http://localhost',
