@@ -39,9 +39,9 @@ const Footer = () => {
             <div className='h-fit w-full flex flex-col justify-center md:justify-start gap-[10px]'>
                 <p className='w-full md:text-left text-sm font-semibold text-center'>Social media</p>
                 <div className='w-full flex flex-col items-center md:items-start gap-[10px]'>
-                    {/* <p className='text-center md:text-left text-sm opacity-50'>
-                        <BsFacebook/>
-                    </p> */}
+                    <a href='https://web.facebook.com/profile.php?id=61553944226187' target="_blank" className='text-center md:text-left text-sm opacity-50'>
+                        <BsFacebook className='text-2xl'/>
+                    </a>
                     <ReactWhatsapp number="+94701999955" message="Hello!!!" className='text-center md:text-left text-sm opacity-50'>
                         <BsWhatsapp className='text-2xl'/>
                     </ReactWhatsapp>
